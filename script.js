@@ -81,6 +81,17 @@
   `;
   document.head.appendChild(typographyStyle);
 
+  const aboutStyle=document.createElement('style');
+  aboutStyle.textContent=`
+    .about__heading .kicker{display:none!important}
+    .about__heading h2{margin-top:0!important}
+    .carousel__hint{display:none!important}
+    .about-card img[data-lightbox]{cursor:zoom-in!important;transition:transform .22s ease,filter .22s ease}
+    .about-card img[data-lightbox]:hover{transform:scale(1.015);filter:brightness(.98)}
+    .about-card img[data-lightbox]:focus{outline:2px solid #87985f;outline-offset:3px}
+  `;
+  document.head.appendChild(aboutStyle);
+
   const oldBranch=document.querySelector('.hero__branch');
   if(oldBranch){const img=document.createElement('img');img.className='hero__branch-img';img.src='assets/branch.png';img.alt='';img.setAttribute('aria-hidden','true');oldBranch.replaceWith(img)}
 
@@ -122,11 +133,28 @@
       .replace('спокойнее относиться к рациону','<strong>спокойнее относиться к рациону</strong>');
   }
 
+  const aboutHeading=document.querySelector('.about__heading h2');
+  if(aboutHeading)aboutHeading.textContent='Обо мне';
+  document.querySelector('.about__heading .kicker')?.remove();
+  document.querySelector('.carousel__hint')?.remove();
+  document.querySelectorAll('.about-card img').forEach(photo=>{
+    const src=photo.getAttribute('src');
+    if(!src)return;
+    photo.dataset.lightbox=src;
+    photo.tabIndex=0;
+    photo.setAttribute('role','button');
+    photo.setAttribute('aria-label','Увеличить фотографию');
+  });
+
   const c=document.querySelector('[data-carousel]');
-  if(c){const t=c.querySelector('.carousel__track'),p=document.querySelector('[data-carousel-prev]'),n=document.querySelector('[data-carousel-next]');const step=()=>{const f=t.querySelector('.about-card');return f?f.getBoundingClientRect().width+parseFloat(getComputedStyle(t).gap||18):t.clientWidth};p?.addEventListener('click',()=>t.scrollBy({left:-step(),behavior:'smooth'}));n?.addEventListener('click',()=>t.scrollBy({left:step(),behavior:'smooth'}));t.querySelectorAll('.about-card').forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('a,button'))return;const a=card.getBoundingClientRect(),b=t.getBoundingClientRect(),d=(a.left+a.width/2)-(b.left+b.width/2);if(Math.abs(d)>a.width*.4)t.scrollBy({left:d,behavior:'smooth'})}))}
+  if(c){const t=c.querySelector('.carousel__track'),p=document.querySelector('[data-carousel-prev]'),n=document.querySelector('[data-carousel-next]');const step=()=>{const f=t.querySelector('.about-card');return f?f.getBoundingClientRect().width+parseFloat(getComputedStyle(t).gap||18):t.clientWidth};p?.addEventListener('click',()=>t.scrollBy({left:-step(),behavior:'smooth'}));n?.addEventListener('click',()=>t.scrollBy({left:step(),behavior:'smooth'}));t.querySelectorAll('.about-card').forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('a,button,[data-lightbox]'))return;const a=card.getBoundingClientRect(),b=t.getBoundingClientRect(),d=(a.left+a.width/2)-(b.left+b.width/2);if(Math.abs(d)>a.width*.4)t.scrollBy({left:d,behavior:'smooth'})}))}
 
   const m=document.querySelector('[data-lightbox-modal]'),img=m?.querySelector('.lightbox__image'),x=m?.querySelector('.lightbox__close');
-  document.querySelectorAll('[data-lightbox]').forEach(b=>b.addEventListener('click',()=>{if(!m||!img)return;img.src=b.dataset.lightbox;img.alt=b.querySelector('img')?.alt||'Диплом';m.hidden=false;document.body.style.overflow='hidden'}));
+  const openLightbox=b=>{if(!m||!img)return;img.src=b.dataset.lightbox;img.alt=b.alt||b.querySelector?.('img')?.alt||'Изображение';m.hidden=false;document.body.style.overflow='hidden'};
+  document.querySelectorAll('[data-lightbox]').forEach(b=>{
+    b.addEventListener('click',()=>openLightbox(b));
+    b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLightbox(b)}});
+  });
   const close=()=>{if(!m)return;m.hidden=true;document.body.style.overflow=''};
   x?.addEventListener('click',close);m?.addEventListener('click',e=>{if(e.target===m)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&m&&!m.hidden)close()});
 })();
