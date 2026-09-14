@@ -107,7 +107,7 @@ body .services .price-card--featured .price-card__head{
   border-bottom-color:rgba(82,62,52,.24)!important;
 }
 body .services .price-card__head h3{
-  margin:0 0 7px!important;
+  margin:0 0 9px!important;
   font-family:"Manrope",sans-serif!important;
   font-size:18px!important;
   line-height:1.35!important;
@@ -115,34 +115,49 @@ body .services .price-card__head h3{
   letter-spacing:-.02em!important;
   color:#26331f!important;
 }
-body .services .price-card__head strong{
+
+/* Цены — чистая современная типографика */
+body .services .pricing .price-card .price-card__head strong{
   display:block!important;
   margin:0!important;
-  font-family:"Poiret One",sans-serif!important;
-  font-size:29px!important;
-  line-height:1.05!important;
-  font-weight:400!important;
-  letter-spacing:0!important;
-  color:#66794a!important;
-}
-body .services .price-card--featured .price-card__head strong{
-  display:flex!important;
-  align-items:baseline!important;
-  gap:12px!important;
-  color:#d35f43!important;
-}
-body .services .price-card--featured .price-card__head strong::before{
-  content:"15 000 ₽"!important;
   font-family:"Manrope",sans-serif!important;
-  font-size:15px!important;
+  font-size:35px!important;
   line-height:1!important;
   font-weight:400!important;
-  letter-spacing:-.02em!important;
-  color:#7b6055!important;
-  text-decoration:line-through!important;
-  text-decoration-thickness:1.3px!important;
-  opacity:.75!important;
+  letter-spacing:-.055em!important;
+  font-variant-numeric:tabular-nums!important;
+  color:#6a7d4e!important;
 }
+body .services .pricing .price-card.price-card--featured .price-card__head strong{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:8px!important;
+  color:#cf5f43!important;
+  font-size:37px!important;
+  font-weight:500!important;
+}
+body .services .pricing .price-card.price-card--featured .price-card__head strong::before{
+  content:"15 000 ₽"!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  width:max-content!important;
+  padding:6px 11px 7px!important;
+  border:1px solid rgba(177,81,60,.38)!important;
+  border-radius:999px!important;
+  background:rgba(255,250,245,.46)!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:600!important;
+  letter-spacing:-.015em!important;
+  color:#9b5141!important;
+  text-decoration-line:line-through!important;
+  text-decoration-thickness:2px!important;
+  text-decoration-color:#c85e46!important;
+  opacity:1!important;
+}
+
 body .services .price-card ul{
   margin:20px 0!important;
   padding-left:17px!important;
@@ -213,7 +228,8 @@ body .services .price-card--featured .price-card__button{
   body .services .price-card{min-height:0!important;padding:28px 26px 24px!important}
   body .services .price-card:not(.price-card--featured) .price-card__head{margin-top:0!important}
   body .services .price-card__head h3{font-size:17px!important}
-  body .services .price-card__head strong{font-size:28px!important}
+  body .services .pricing .price-card .price-card__head strong{font-size:33px!important}
+  body .services .pricing .price-card.price-card--featured .price-card__head strong{font-size:35px!important}
 }
 
 @media(max-width:560px){
@@ -223,4 +239,7 @@ body .services .price-card--featured .price-card__button{
   body .services .price-card ul{font-size:12.5px!important}
   body .services .price-card__result{font-size:11.5px!important}
   body .services .price-card__button{min-height:48px!important}
+  body .services .pricing .price-card .price-card__head strong{font-size:31px!important}
+  body .services .pricing .price-card.price-card--featured .price-card__head strong{font-size:33px!important}
+  body .services .pricing .price-card.price-card--featured .price-card__head strong::before{font-size:13px!important;padding:5px 10px 6px!important}
 }
