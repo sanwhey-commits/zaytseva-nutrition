@@ -64,18 +64,23 @@
     .about .diplomas::before{height:108px!important}
     .about .diplomas{padding-top:138px!important}
     .about .diplomas__copy::before,.about .diploma-card:nth-child(2)::before,.about .diploma-card:nth-child(3)::before{top:26px!important}
+    .diplomas__copy h3{font-size:36px!important;line-height:1.12!important;margin:0 0 15px!important;color:#52633d!important}
+    .diplomas__copy p{font-size:15px!important;line-height:1.62!important;font-weight:400!important;letter-spacing:-.015em!important;color:#68735f!important;max-width:360px!important}
+    .diploma-card span{display:block!important;margin-top:13px!important;font-size:14px!important;line-height:1.48!important;font-weight:400!important;letter-spacing:-.012em!important;color:#68735f!important}
     @media(max-width:900px){
       .about__heading h2{font-size:48px!important}
       .about-card h3{font-size:16px!important}.about-card p{font-size:14.5px!important}
       .about .diplomas{padding-top:178px!important}.about .diplomas::before{height:148px!important}
       .about .diplomas__copy::before,.about .diploma-card:nth-child(2)::before,.about .diploma-card:nth-child(3)::before{font-size:14px!important;line-height:1.45!important;left:22px!important;width:calc(100% - 44px)!important}
       .about .diplomas__copy::before{top:23px!important}.about .diploma-card:nth-child(2)::before{top:64px!important}.about .diploma-card:nth-child(3)::before{top:103px!important}
+      .diplomas__copy h3{font-size:32px!important}.diplomas__copy p{font-size:14px!important}.diploma-card span{font-size:13.5px!important}
     }
     @media(max-width:560px){
       .about__heading h2{font-size:40px!important}.about-card h3{font-size:16px!important}.about-card p{font-size:14px!important;line-height:1.58!important}
       .about .diplomas{padding-top:206px!important}.about .diplomas::before{height:176px!important}
       .about .diplomas__copy::before,.about .diploma-card:nth-child(2)::before,.about .diploma-card:nth-child(3)::before{font-size:13.5px!important;left:18px!important;width:calc(100% - 36px)!important}
       .about .diplomas__copy::before{top:20px!important}.about .diploma-card:nth-child(2)::before{top:68px!important}.about .diploma-card:nth-child(3)::before{top:114px!important}
+      .diplomas__copy h3{font-size:30px!important}.diplomas__copy p{font-size:14px!important}.diploma-card span{font-size:13px!important}
     }
   `);
 
