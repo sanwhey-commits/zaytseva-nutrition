@@ -40,7 +40,7 @@ body{font-family:var(--hero-font)!important}
   letter-spacing:-.01em!important;
 }
 
-/* Главный заголовок: в оригинале он не сверхтонкий — возвращаем плотность */
+/* Главный заголовок */
 body .hero h1{
   font-family:var(--hero-font)!important;
   font-size:clamp(58px,5.35vw,78px)!important;
@@ -61,7 +61,6 @@ body .hero .highlight{
   margin-left:-4px!important;
 }
 
-/* Подзаголовок — заметно плотнее, как на исходном экране */
 body .hero .hero__lead{
   font-family:var(--hero-font)!important;
   max-width:485px!important;
@@ -72,7 +71,6 @@ body .hero .hero__lead{
   color:#647052!important;
 }
 
-/* CTA: белый текст в оригинале выраженно полужирный */
 body .hero .hero__actions{
   margin-top:33px!important;
   gap:27px!important;
@@ -105,7 +103,6 @@ body .hero .photo-label{
   padding:11px 18px!important;
 }
 
-/* Бегущая строка сразу под первым экраном */
 .marquee .marquee__set{
   font-family:var(--hero-font)!important;
   font-size:13px!important;
@@ -113,18 +110,51 @@ body .hero .photo-label{
   letter-spacing:.055em!important;
 }
 
-/* Пропорции исходника: сайт заметно уже */
+/* Пропорции страницы */
 :root{--content-max:960px}
 .shell{width:min(var(--content-max),calc(100% - 64px))!important;margin-left:auto!important;margin-right:auto!important}
 body .hero .hero__grid{grid-template-columns:minmax(0,1fr) minmax(0,.94fr)!important;gap:46px!important}
 body .hero .hero__visual{min-height:555px!important}
 body .hero .hero__image{width:min(100%,430px)!important;max-height:535px!important}
-body .hero .hero__oval{width:108%!important;left:-4%!important;height:76%!important}
 body .hero h1{font-size:clamp(52px,4.7vw,64px)!important}
 body .hero .hero__lead{max-width:430px!important;font-size:15px!important}
 body .hero .hero__actions .btn{min-height:56px!important;padding:0 30px!important;font-size:15px!important}
 body .hero .underlink{font-size:13px!important}
 .contacts .shell{width:min(var(--content-max),calc(100% - 64px))!important}
+
+/* Первый экран: воздух снизу и форма за фотографией как в оригинале */
+@media(min-width:901px){
+  body .hero{
+    padding-top:24px!important;
+    padding-bottom:72px!important;
+  }
+  body .hero .hero__grid{
+    align-items:center!important;
+  }
+  body .hero .hero__visual{
+    min-height:545px!important;
+    padding-bottom:0!important;
+  }
+  body .hero .hero__image{
+    position:relative!important;
+    z-index:2!important;
+    width:min(100%,430px)!important;
+    max-height:525px!important;
+  }
+  body .hero .hero__oval{
+    width:104%!important;
+    height:82%!important;
+    left:-2%!important;
+    bottom:-10%!important;
+    border-radius:50%!important;
+    background:#e1e4cf!important;
+  }
+  body .hero .photo-label{
+    z-index:3!important;
+    bottom:20px!important;
+    left:7%!important;
+  }
+}
 
 @media(max-width:1024px){
   :root{--content-max:920px}
@@ -135,9 +165,11 @@ body .hero .underlink{font-size:13px!important}
 
 @media(max-width:900px){
   .shell,.contacts .shell{width:min(100% - 30px,var(--content-max))!important}
+  body .hero{padding-bottom:52px!important}
   body .hero .hero__grid{grid-template-columns:1fr!important;gap:26px!important}
   body .hero .hero__visual{min-height:0!important}
   body .hero .hero__image{width:min(76vw,450px)!important;max-height:none!important}
+  body .hero .hero__oval{width:93%!important;height:78%!important;left:3.5%!important;bottom:-7%!important}
   body .hero h1{font-size:56px!important}
   body .hero .hero__lead{font-size:15px!important}
 }
@@ -145,6 +177,7 @@ body .hero .underlink{font-size:13px!important}
 @media(max-width:560px){
   .shell,.contacts .shell{width:min(100% - 24px,var(--content-max))!important}
   .header .brand strong{font-size:16px!important}
+  body .hero{padding-bottom:44px!important}
   body .hero h1{font-size:44px!important;line-height:1.08!important}
   body .hero .hero__lead{font-size:14px!important;line-height:1.65!important}
   body .hero .hero__actions .btn{min-height:56px!important;font-size:15px!important;padding:0 25px!important}
