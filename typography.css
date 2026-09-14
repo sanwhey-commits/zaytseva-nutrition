@@ -14,11 +14,11 @@
   color:#4f352b!important;
 }
 
-/* Заголовок блока состояний — делаем реально заметно жирнее */
+/* Заголовок блока состояний — средняя плотность, между тонким и жирным */
 .symptoms__box h2{
   font-family:"Manrope",sans-serif!important;
-  font-weight:600!important;
-  letter-spacing:-.04em!important;
+  font-weight:500!important;
+  letter-spacing:-.032em!important;
   line-height:1.16!important;
   color:#30241f!important;
   -webkit-text-stroke:0!important;
@@ -26,9 +26,9 @@
 
 @media(max-width:900px){
   .symptom p::before{font-size:15.5px!important;font-weight:600!important}
-  .symptoms__box h2{font-weight:600!important}
+  .symptoms__box h2{font-weight:500!important}
 }
 @media(max-width:560px){
   .symptom p::before{font-size:14.5px!important;font-weight:600!important}
-  .symptoms__box h2{font-weight:600!important}
+  .symptoms__box h2{font-weight:500!important}
 }
