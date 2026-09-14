@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+
+/* Этап 1: шапка и первый экран — по референсу */
+:root{--hero-font:"Manrope",sans-serif}
+
+body{font-family:var(--hero-font)!important}
+
+/* Шапка */
+.header .brand strong{
+  font-family:var(--hero-font)!important;
+  font-size:18px!important;
+  line-height:1.12!important;
+  font-weight:500!important;
+  letter-spacing:.025em!important;
+  color:#52613c!important;
+}
+.header .brand small{
+  font-family:var(--hero-font)!important;
+  margin-top:5px!important;
+  font-size:10px!important;
+  line-height:1.2!important;
+  font-weight:500!important;
+  letter-spacing:.16em!important;
+  color:#68745c!important;
+}
+.header .nav{
+  font-family:var(--hero-font)!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:400!important;
+  letter-spacing:-.012em!important;
+}
+.header .btn--header{
+  font-family:var(--hero-font)!important;
+  min-height:48px!important;
+  padding:0 24px!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:600!important;
+  letter-spacing:-.01em!important;
+}
+
+/* Главный заголовок */
+body .hero h1{
+  font-family:var(--hero-font)!important;
+  font-size:clamp(58px,5.35vw,78px)!important;
+  line-height:1.075!important;
+  font-weight:400!important;
+  letter-spacing:-.048em!important;
+  color:#52613c!important;
+  margin:0 0 31px!important;
+}
+body .hero .highlight{
+  font-family:var(--hero-font)!important;
+  font-weight:400!important;
+  letter-spacing:-.048em!important;
+  color:#3a271f!important;
+  background:#f6bda7!important;
+  border-radius:999px!important;
+  padding:0 17px 5px!important;
+  margin-left:-4px!important;
+}
+
+body .hero .hero__lead{
+  font-family:var(--hero-font)!important;
+  max-width:485px!important;
+  font-size:17px!important;
+  line-height:1.72!important;
+  font-weight:400!important;
+  letter-spacing:-.025em!important;
+  color:#647052!important;
+}
+
+body .hero .hero__actions{
+  margin-top:33px!important;
+  gap:27px!important;
+}
+body .hero .hero__actions .btn{
+  font-family:var(--hero-font)!important;
+  min-height:60px!important;
+  padding:0 34px!important;
+  border-radius:999px!important;
+  font-size:16px!important;
+  line-height:1!important;
+  font-weight:600!important;
+  letter-spacing:-.018em!important;
+}
+body .hero .underlink{
+  font-family:var(--hero-font)!important;
+  font-size:14px!important;
+  line-height:1.25!important;
+  font-weight:400!important;
+  letter-spacing:-.022em!important;
+  text-decoration-thickness:1px!important;
+  text-underline-offset:6px!important;
+}
+body .hero .photo-label{
+  font-family:var(--hero-font)!important;
+  font-size:12px!important;
+  line-height:1!important;
+  font-weight:400!important;
+  letter-spacing:-.018em!important;
+  padding:11px 18px!important;
+}
+
+/* Бегущая строка — увеличенный текст и звёздочки как в оригинале */
+.marquee{
+  min-height:66px!important;
+  height:66px!important;
+  display:flex!important;
+  align-items:center!important;
+  background:#7d8e58!important;
+  overflow:hidden!important;
+}
+.marquee .marquee__track{
+  height:66px!important;
+  display:flex!important;
+  align-items:center!important;
+  animation-duration:31s!important;
+}
+.marquee .marquee__set{
+  height:66px!important;
+  display:flex!important;
+  align-items:center!important;
+  font-family:var(--hero-font)!important;
+  font-size:16px!important;
+  line-height:1!important;
+  font-weight:600!important;
+  letter-spacing:.035em!important;
+  gap:38px!important;
+  padding:0 24px!important;
+  white-space:nowrap!important;
+  color:#f6f4eb!important;
+}
+.marquee .marquee__set i{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex:0 0 auto!important;
+  font-family:Arial,sans-serif!important;
+  font-size:19px!important;
+  line-height:1!important;
+  font-style:normal!important;
+  font-weight:400!important;
+  color:#cbd4aa!important;
+  opacity:1!important;
+  transform:translateY(-1px)!important;
+}
+
+/* Пропорции страницы */
+:root{--content-max:960px}
+.shell{width:min(var(--content-max),calc(100% - 64px))!important;margin-left:auto!important;margin-right:auto!important}
+body .hero .hero__grid{grid-template-columns:minmax(0,1fr) minmax(0,.94fr)!important;gap:46px!important}
+body .hero .hero__visual{min-height:555px!important}
+body .hero .hero__image{width:min(100%,430px)!important;max-height:535px!important}
+body .hero h1{font-size:clamp(52px,4.7vw,64px)!important}
+body .hero .hero__lead{max-width:430px!important;font-size:15px!important}
+body .hero .hero__actions .btn{min-height:56px!important;padding:0 30px!important;font-size:15px!important}
+body .hero .underlink{font-size:13px!important}
+.contacts .shell{width:min(var(--content-max),calc(100% - 64px))!important}
+
+/* Первый экран: воздух снизу и форма за фотографией как в оригинале */
+@media(min-width:901px){
+  body .hero{
+    padding-top:24px!important;
+    padding-bottom:72px!important;
+  }
+  body .hero .hero__grid{
+    align-items:center!important;
+  }
+  body .hero .hero__visual{
+    min-height:545px!important;
+    padding-bottom:0!important;
+  }
+  body .hero .hero__image{
+    position:relative!important;
+    z-index:2!important;
+    width:min(100%,430px)!important;
+    max-height:525px!important;
+  }
+  body .hero .hero__oval{
+    width:104%!important;
+    height:82%!important;
+    left:-2%!important;
+    bottom:-10%!important;
+    border-radius:50%!important;
+    background:#e1e4cf!important;
+  }
+  body .hero .photo-label{
+    z-index:3!important;
+    bottom:20px!important;
+    left:7%!important;
+  }
+}
+
+/* Этап 3: блок состояний — геометрия и типографика оригинала */
+.symptoms{
+  padding-top:86px!important;
+  padding-bottom:78px!important;
+}
+.symptoms .shell{
+  width:min(var(--content-max),calc(100% - 64px))!important;
+}
+.symptoms__box{
+  background:#f7bea9!important;
+  border-radius:29px!important;
+  padding:49px 42px 41px!important;
+  box-sizing:border-box!important;
+}
+.symptoms__box h2{
+  max-width:790px!important;
+  margin:0 0 15px!important;
+  font-family:"Poiret One",sans-serif!important;
+  font-size:40px!important;
+  line-height:1.15!important;
+  font-weight:400!important;
+  letter-spacing:.001em!important;
+  color:#30241f!important;
+}
+.symptoms__box .intro{
+  margin:0!important;
+  font-size:0!important;
+  line-height:1!important;
+  color:#5a3b2f!important;
+}
+.symptoms__box .intro::before{
+  content:"Не спешите винить себя. Во многих случаях за ними могут стоять особенности питания и образа жизни.";
+  display:block!important;
+  font-family:var(--hero-font)!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  font-weight:400!important;
+  letter-spacing:-.012em!important;
+}
+.symptoms__grid{
+  display:grid!important;
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:14px!important;
+  margin-top:31px!important;
+}
+.symptom{
+  min-height:118px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:24px!important;
+  padding:0 25px!important;
+  box-sizing:border-box!important;
+  border-radius:19px!important;
+  background:#fae8de!important;
+}
+.symptom--wide{grid-column:span 3!important}
+.symptom:not(.symptom--wide){grid-column:span 2!important}
+.symptom p{
+  margin:0!important;
+  min-width:0!important;
+  font-size:0!important;
+  line-height:1!important;
+  color:#263020!important;
+}
+.symptom p::before{
+  display:block!important;
+  white-space:pre-line!important;
+  font-family:var(--hero-font)!important;
+  font-size:16px!important;
+  line-height:1.39!important;
+  font-weight:500!important;
+  letter-spacing:-.022em!important;
+  color:#263020!important;
+}
+.symptom:nth-child(1) p::before{content:"Постоянная усталость,\Aдаже после отдыха"}
+.symptom:nth-child(2) p::before{content:"Вес стоит на месте,\Aне смотря на ваши усилия"}
+.symptom:nth-child(3) p::before{content:"Вздутие\Aи дискомфорт\Aпосле еды"}
+.symptom:nth-child(4) p::before{content:"Постоянная тяга\Aк сладкому"}
+.symptom:nth-child(5) p::before{content:"Пытаетесь начать «новую\Aжизнь» каждый\Aпонедельник"}
+.symptom span{
+  display:block!important;
+  width:43px!important;
+  height:43px!important;
+  flex:0 0 43px!important;
+  font-size:0!important;
+  color:transparent!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+  background-size:41px 41px!important;
+  opacity:.88!important;
+}
+.symptom:nth-child(1) span{background-image:url('assets/icon-fatigue.svg')!important}
+.symptom:nth-child(2) span{background-image:url('assets/icon-scale.svg')!important}
+.symptom:nth-child(3) span{background-image:url('assets/icon-bloating.svg')!important}
+.symptom:nth-child(4) span{background-image:url('assets/icon-sweet.svg')!important}
+.symptom:nth-child(5) span{background-image:url('assets/icon-monday.svg')!important}
+
+@media(max-width:1024px){
+  :root{--content-max:920px}
+  body .hero .hero__grid{gap:38px!important}
+  body .hero h1{font-size:56px!important}
+  body .hero .hero__image{width:min(100%,410px)!important}
+}
+
+@media(max-width:900px){
+  .shell,.contacts .shell{width:min(100% - 30px,var(--content-max))!important}
+  body .hero{padding-bottom:52px!important}
+  body .hero .hero__grid{grid-template-columns:1fr!important;gap:26px!important}
+  body .hero .hero__visual{min-height:0!important}
+  body .hero .hero__image{width:min(76vw,450px)!important;max-height:none!important}
+  body .hero .hero__oval{width:93%!important;height:78%!important;left:3.5%!important;bottom:-7%!important}
+  body .hero h1{font-size:56px!important}
+  body .hero .hero__lead{font-size:15px!important}
+  .marquee{min-height:60px!important;height:60px!important}
+  .marquee .marquee__track,.marquee .marquee__set{height:60px!important}
+  .marquee .marquee__set{font-size:15px!important;gap:32px!important;padding:0 20px!important}
+  .marquee .marquee__set i{font-size:18px!important}
+  .symptoms{padding-top:62px!important}
+  .symptoms__box{padding:36px 28px 30px!important}
+  .symptoms__box h2{font-size:34px!important}
+  .symptoms__box .intro::before{font-size:12.5px!important}
+  .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:110px!important;padding:0 21px!important}
+  .symptom:last-child{grid-column:1/-1!important}
+  .symptom p::before{font-size:15px!important;font-weight:500!important}
+  .symptom span{width:38px!important;height:38px!important;flex-basis:38px!important;background-size:36px 36px!important}
+}
+
+@media(max-width:560px){
+  .shell,.contacts .shell{width:min(100% - 24px,var(--content-max))!important}
+  .header .brand strong{font-size:16px!important}
+  body .hero{padding-bottom:44px!important}
+  body .hero h1{font-size:44px!important;line-height:1.08!important}
+  body .hero .hero__lead{font-size:14px!important;line-height:1.65!important}
+  body .hero .hero__actions .btn{min-height:56px!important;font-size:15px!important;padding:0 25px!important}
+  body .hero .underlink{font-size:13px!important}
+  .marquee{min-height:56px!important;height:56px!important}
+  .marquee .marquee__track,.marquee .marquee__set{height:56px!important}
+  .marquee .marquee__set{font-size:14px!important;gap:27px!important;padding:0 17px!important}
+  .marquee .marquee__set i{font-size:17px!important}
+  .symptoms{padding-top:50px!important;padding-bottom:56px!important}
+  .symptoms__box{padding:28px 20px 22px!important;border-radius:22px!important}
+  .symptoms__box h2{font-size:30px!important;line-height:1.18!important}
+  .symptoms__box .intro::before{font-size:12px!important}
+  .symptoms__grid{grid-template-columns:1fr!important;gap:10px!important;margin-top:24px!important}
+  .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:104px!important;padding:0 18px!important}
+  .symptom p::before{font-size:14px!important;font-weight:500!important}
+  .symptom span{width:34px!important;height:34px!important;flex-basis:34px!important;background-size:32px 32px!important}
+}
