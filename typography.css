@@ -103,34 +103,48 @@ body .hero .photo-label{
   padding:11px 18px!important;
 }
 
-/* Бегущая строка — ближе к оригиналу */
+/* Бегущая строка — увеличенный текст и звёздочки как в оригинале */
 .marquee{
-  min-height:52px!important;
+  min-height:66px!important;
+  height:66px!important;
   display:flex!important;
   align-items:center!important;
-  background:#83985f!important;
+  background:#7d8e58!important;
+  overflow:hidden!important;
 }
 .marquee .marquee__track{
+  height:66px!important;
+  display:flex!important;
   align-items:center!important;
-  animation-duration:29s!important;
+  animation-duration:31s!important;
 }
 .marquee .marquee__set{
+  height:66px!important;
+  display:flex!important;
+  align-items:center!important;
   font-family:var(--hero-font)!important;
-  font-size:13px!important;
+  font-size:16px!important;
   line-height:1!important;
   font-weight:600!important;
-  letter-spacing:.075em!important;
-  gap:42px!important;
-  padding:18px 26px 19px!important;
+  letter-spacing:.035em!important;
+  gap:38px!important;
+  padding:0 24px!important;
   white-space:nowrap!important;
+  color:#f6f4eb!important;
 }
 .marquee .marquee__set i{
-  font-family:var(--hero-font)!important;
-  font-size:14px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex:0 0 auto!important;
+  font-family:Arial,sans-serif!important;
+  font-size:19px!important;
   line-height:1!important;
+  font-style:normal!important;
   font-weight:400!important;
-  color:#d8dfc2!important;
-  opacity:.95!important;
+  color:#cbd4aa!important;
+  opacity:1!important;
+  transform:translateY(-1px)!important;
 }
 
 /* Пропорции страницы */
@@ -195,7 +209,10 @@ body .hero .underlink{font-size:13px!important}
   body .hero .hero__oval{width:93%!important;height:78%!important;left:3.5%!important;bottom:-7%!important}
   body .hero h1{font-size:56px!important}
   body .hero .hero__lead{font-size:15px!important}
-  .marquee .marquee__set{font-size:12.5px!important;gap:34px!important;padding:16px 22px 17px!important}
+  .marquee{min-height:60px!important;height:60px!important}
+  .marquee .marquee__track,.marquee .marquee__set{height:60px!important}
+  .marquee .marquee__set{font-size:15px!important;gap:32px!important;padding:0 20px!important}
+  .marquee .marquee__set i{font-size:18px!important}
 }
 
 @media(max-width:560px){
@@ -206,6 +223,8 @@ body .hero .underlink{font-size:13px!important}
   body .hero .hero__lead{font-size:14px!important;line-height:1.65!important}
   body .hero .hero__actions .btn{min-height:56px!important;font-size:15px!important;padding:0 25px!important}
   body .hero .underlink{font-size:13px!important}
-  .marquee{min-height:48px!important}
-  .marquee .marquee__set{font-size:12px!important;gap:28px!important;padding:15px 18px 16px!important}
+  .marquee{min-height:56px!important;height:56px!important}
+  .marquee .marquee__track,.marquee .marquee__set{height:56px!important}
+  .marquee .marquee__set{font-size:14px!important;gap:27px!important;padding:0 17px!important}
+  .marquee .marquee__set i{font-size:17px!important}
 }
