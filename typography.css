@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Poiret+One&display=swap');
+
+:root{
+  --display-font:"Poiret One",sans-serif;
+  --text-font:"Montserrat",sans-serif;
+}
+
+/* Общая типографика — ближе к исходному сайту */
+body{font-family:var(--text-font)!important;font-weight:300!important;letter-spacing:-.012em!important}
+button,input,textarea,select{font-family:var(--text-font)!important}
+p,li,a,span,small,strong{font-family:inherit}
+
+/* Шапка */
+.brand strong{font-family:var(--text-font)!important;font-size:15px!important;font-weight:400!important;letter-spacing:.045em!important;line-height:1.15!important}
+.brand small{font-family:var(--text-font)!important;margin-top:5px!important;font-size:8px!important;font-weight:400!important;letter-spacing:.185em!important;line-height:1.25!important}
+.nav{font-family:var(--text-font)!important;font-size:11px!important;font-weight:400!important;letter-spacing:-.01em!important}
+.btn,.price-card__button,.contacts__button{font-family:var(--text-font)!important;font-weight:500!important;letter-spacing:-.015em!important}
+
+/* Главный экран */
+.hero h1{
+  font-family:var(--display-font)!important;
+  font-size:clamp(54px,5.35vw,76px)!important;
+  line-height:1.055!important;
+  font-weight:400!important;
+  letter-spacing:.005em!important;
+}
+.highlight{font-family:var(--display-font)!important;font-weight:400!important;letter-spacing:.005em!important}
+.hero__lead{font-family:var(--text-font)!important;font-size:12.5px!important;line-height:1.72!important;font-weight:300!important;letter-spacing:-.018em!important}
+.underlink{font-family:var(--text-font)!important;font-size:11px!important;font-weight:300!important;letter-spacing:-.02em!important;text-underline-offset:5px!important}
+.photo-label{font-family:var(--text-font)!important;font-size:9px!important;font-weight:400!important;letter-spacing:-.015em!important}
+
+/* Бегущая строка */
+.marquee__set{font-family:var(--text-font)!important;font-size:11px!important;font-weight:600!important;letter-spacing:.075em!important;text-transform:none!important}
+
+/* Главные заголовки разделов */
+.section-title,
+.symptoms__box h2,
+.philosophy__lead h2,
+.about__heading h2,
+.diplomas__copy h3,
+.services__head h2,
+.contacts__title{
+  font-family:var(--display-font)!important;
+  font-weight:400!important;
+  letter-spacing:.002em!important;
+}
+.section-title{font-size:46px!important;line-height:1.08!important;margin-bottom:36px!important}
+
+/* Состояния */
+.symptoms__box h2{font-size:35px!important;line-height:1.16!important;margin-bottom:12px!important}
+.intro{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.58!important;font-weight:300!important;letter-spacing:-.018em!important}
+.symptom p{font-family:var(--text-font)!important;font-size:12.5px!important;line-height:1.42!important;font-weight:400!important;letter-spacing:-.025em!important}
+
+/* Результаты */
+.outcome h3{font-family:var(--text-font)!important;font-size:10px!important;line-height:1.2!important;font-weight:600!important;letter-spacing:.20em!important}
+.outcome li{font-family:var(--text-font)!important;font-size:12.5px!important;line-height:1.45!important;font-weight:400!important;letter-spacing:-.025em!important}
+
+/* Философия и принципы */
+.philosophy__lead h2{font-size:45px!important;line-height:1.08!important}
+.philosophy__lead p{font-family:var(--text-font)!important;font-size:11.5px!important;line-height:1.68!important;font-weight:300!important;letter-spacing:-.018em!important}
+.principles span{font-family:var(--text-font)!important;font-size:9.5px!important;font-weight:400!important;letter-spacing:.04em!important}
+.principles h3{font-family:var(--text-font)!important;font-size:14.5px!important;line-height:1.38!important;font-weight:400!important;letter-spacing:-.025em!important;margin-top:10px!important}
+.principles p{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.58!important;font-weight:300!important;letter-spacing:-.012em!important}
+
+/* Обо мне / карусель */
+.kicker{font-family:var(--text-font)!important;font-size:8px!important;font-weight:600!important;letter-spacing:.22em!important}
+.about__heading h2{font-size:46px!important;line-height:1.08!important}
+.about-card h3{font-family:var(--text-font)!important;font-size:13px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.02em!important;margin-bottom:7px!important}
+.about-card p{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.62!important;font-weight:300!important;letter-spacing:-.012em!important}
+.carousel__hint{font-family:var(--text-font)!important;font-size:8.5px!important;font-style:italic!important;font-weight:300!important;letter-spacing:-.01em!important}
+.diplomas__copy h3{font-size:30px!important;line-height:1.08!important}
+.diplomas__copy p,.diploma-card span{font-family:var(--text-font)!important;font-weight:300!important;letter-spacing:-.012em!important}
+.diplomas__copy p{font-size:10.5px!important;line-height:1.6!important}
+.diploma-card span{font-size:8.5px!important;line-height:1.45!important}
+
+/* Услуги */
+.services__head h2{font-size:48px!important;line-height:1.075!important}
+.services__head p{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.65!important;font-weight:300!important;letter-spacing:-.01em!important}
+.badge{font-family:var(--text-font)!important;font-size:7px!important;font-weight:500!important;letter-spacing:.16em!important}
+.price-card__head h3{font-family:var(--text-font)!important;font-size:16px!important;line-height:1.35!important;font-weight:400!important;letter-spacing:-.03em!important}
+.price-card__head strong{font-family:var(--display-font)!important;font-size:27px!important;line-height:1!important;font-weight:400!important;letter-spacing:.01em!important}
+.price-card ul{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.58!important;font-weight:300!important;letter-spacing:-.012em!important}
+.price-card__result{font-family:var(--text-font)!important;font-size:9.5px!important;line-height:1.6!important;font-weight:300!important;letter-spacing:-.012em!important}
+.price-card__result b{font-weight:500!important}
+
+/* Этапы */
+.timeline span{font-family:var(--display-font)!important;font-size:24px!important;line-height:1!important;font-weight:400!important;letter-spacing:.02em!important}
+.timeline h3{font-family:var(--text-font)!important;font-size:11.5px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.02em!important;text-transform:none!important}
+.timeline p{font-family:var(--text-font)!important;font-size:9.5px!important;line-height:1.58!important;font-weight:300!important;letter-spacing:-.012em!important}
+
+/* Отзывы */
+.review__accent{font-family:var(--display-font)!important;font-size:40px!important;line-height:1!important;font-weight:400!important;letter-spacing:.01em!important}
+.review__accent small{font-family:var(--text-font)!important;font-size:8.5px!important;font-weight:300!important;font-style:italic!important;letter-spacing:-.01em!important}
+.review p{font-family:var(--text-font)!important;font-size:11.5px!important;line-height:1.7!important;font-weight:300!important;letter-spacing:-.018em!important}
+.review p strong{font-weight:600!important;color:var(--coral)!important}
+.review p em{font-style:italic!important;font-weight:300!important}
+.review span{font-family:var(--text-font)!important;font-size:8.5px!important;line-height:1.45!important;font-weight:300!important;letter-spacing:-.01em!important}
+
+/* FAQ */
+.faq summary{font-family:var(--text-font)!important;font-size:15px!important;line-height:1.4!important;font-weight:400!important;letter-spacing:-.03em!important;padding:21px 0!important}
+.faq details p{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.7!important;font-weight:300!important;letter-spacing:-.012em!important}
+
+/* Контакты */
+.contacts__label,.contacts__item-label{font-family:var(--text-font)!important;font-weight:600!important;text-transform:uppercase!important}
+.contacts__label{font-size:9px!important;letter-spacing:.31em!important}
+.contacts__title{font-size:47px!important;line-height:1.08!important;letter-spacing:.002em!important}
+.contacts__lead{font-family:var(--display-font)!important;font-size:25px!important;line-height:1.32!important;font-weight:400!important;letter-spacing:.003em!important}
+.contacts__item-label{font-size:9px!important;letter-spacing:.28em!important}
+.contacts__item-value{font-family:var(--text-font)!important;font-size:18px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.025em!important}
+.contacts__item-value--text{font-size:16px!important;font-weight:400!important}
+.contacts__bottom{font-family:var(--text-font)!important;font-size:10.5px!important;line-height:1.45!important;font-weight:300!important;letter-spacing:-.02em!important}
+
+/* Небольшие акценты, как в исходнике */
+.review p strong,.price-card__result b{font-style:normal!important}
+.review p em,.carousel__hint{font-style:italic!important}
+
+@media(max-width:900px){
+  .hero h1{font-size:56px!important}
+  .section-title,.about__heading h2{font-size:42px!important}
+  .services__head h2{font-size:44px!important}
+  .contacts__title{font-size:42px!important}
+  .contacts__lead{font-size:22px!important}
+}
+
+@media(max-width:560px){
+  .hero h1{font-size:45px!important;line-height:1.06!important}
+  .section-title,.about__heading h2,.services__head h2{font-size:37px!important;line-height:1.08!important}
+  .symptoms__box h2{font-size:30px!important}
+  .philosophy__lead h2{font-size:37px!important}
+  .contacts__title{font-size:37px!important;line-height:1.08!important}
+  .contacts__lead{font-size:20px!important;line-height:1.35!important}
+}
