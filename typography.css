@@ -15,7 +15,7 @@
   padding:48px 43px 46px!important;
   box-sizing:border-box!important;
 }
-.symptoms__box h2{
+body .symptoms__box h2{
   max-width:790px!important;
   margin:0 0 16px!important;
   font-family:"Manrope",sans-serif!important;
@@ -103,7 +103,7 @@
   .symptoms{padding-top:62px!important;padding-bottom:62px!important}
   .symptoms .shell{width:min(100% - 30px,760px)!important}
   .symptoms__box{padding:36px 28px 31px!important;border-radius:26px!important}
-  .symptoms__box h2{font-size:34px!important;line-height:1.17!important}
+  body .symptoms__box h2{font-size:34px!important;line-height:1.17!important;font-weight:400!important}
   .symptoms__box .intro::before{font-size:13px!important}
   .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin-top:27px!important}
   .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:112px!important;padding:0 21px!important}
@@ -116,7 +116,7 @@
   .symptoms{padding-top:50px!important;padding-bottom:54px!important}
   .symptoms .shell{width:calc(100% - 24px)!important}
   .symptoms__box{padding:28px 20px 22px!important;border-radius:22px!important}
-  .symptoms__box h2{font-size:29px!important;line-height:1.18!important;letter-spacing:-.03em!important}
+  body .symptoms__box h2{font-size:29px!important;line-height:1.18!important;letter-spacing:-.03em!important;font-weight:400!important}
   .symptoms__box .intro::before{font-size:12px!important}
   .symptoms__grid{grid-template-columns:1fr!important;gap:10px!important;margin-top:24px!important}
   .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:102px!important;padding:0 18px!important}
