@@ -11,9 +11,7 @@
     gap:30px!important;
     margin-top:66px!important;
   }
-  .about .diploma-card{
-    width:100%!important;
-  }
+  .about .diploma-card{width:100%!important}
   .about .diploma-card img{
     width:100%!important;
     height:300px!important;
@@ -30,4 +28,199 @@
 
 @media (max-width:560px){
   .about .diploma-card img{height:auto!important;object-fit:contain!important}
+}
+
+/* Услуги — аккуратная геометрия как в оригинале */
+body .services{
+  padding-top:70px!important;
+  padding-bottom:70px!important;
+}
+body .services .shell{
+  width:min(1100px,calc(100% - 64px))!important;
+  max-width:none!important;
+}
+body .services .services__head{
+  grid-template-columns:1fr .48fr!important;
+  gap:90px!important;
+  margin-bottom:36px!important;
+  align-items:end!important;
+}
+body .services .services__head h2{
+  font-family:"Poiret One",sans-serif!important;
+  font-size:47px!important;
+  line-height:1.12!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  color:#55663f!important;
+}
+body .services .services__head p{
+  max-width:360px!important;
+  margin:0 0 4px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:12px!important;
+  line-height:1.65!important;
+  font-weight:400!important;
+  letter-spacing:-.012em!important;
+  color:#68735f!important;
+}
+body .services .pricing{
+  grid-template-columns:1fr 1fr!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+body .services .price-card{
+  min-height:620px!important;
+  padding:29px!important;
+  border:1px solid #ccd2b5!important;
+  border-radius:26px!important;
+  background:rgba(255,255,255,.22)!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+}
+body .services .price-card--featured{
+  background:#f5bea8!important;
+  border-color:transparent!important;
+  box-shadow:0 14px 30px rgba(71,80,49,.07)!important;
+}
+body .services .price-card:not(.price-card--featured) .price-card__head{
+  margin-top:47px!important;
+}
+body .services .badge{
+  min-height:26px!important;
+  padding:0 12px!important;
+  margin:0 0 20px!important;
+  border:1px solid rgba(85,61,49,.34)!important;
+  border-radius:999px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:8px!important;
+  line-height:1!important;
+  font-weight:600!important;
+  letter-spacing:.16em!important;
+  color:#594238!important;
+  background:transparent!important;
+}
+body .services .price-card__head{
+  padding-bottom:20px!important;
+  border-bottom:1px dashed rgba(82,97,60,.30)!important;
+}
+body .services .price-card--featured .price-card__head{
+  border-bottom-color:rgba(82,62,52,.24)!important;
+}
+body .services .price-card__head h3{
+  margin:0 0 7px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:18px!important;
+  line-height:1.35!important;
+  font-weight:500!important;
+  letter-spacing:-.02em!important;
+  color:#26331f!important;
+}
+body .services .price-card__head strong{
+  display:block!important;
+  margin:0!important;
+  font-family:"Poiret One",sans-serif!important;
+  font-size:29px!important;
+  line-height:1.05!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  color:#66794a!important;
+}
+body .services .price-card--featured .price-card__head strong{
+  display:flex!important;
+  align-items:baseline!important;
+  gap:12px!important;
+  color:#d35f43!important;
+}
+body .services .price-card--featured .price-card__head strong::before{
+  content:"15 000 ₽"!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:15px!important;
+  line-height:1!important;
+  font-weight:400!important;
+  letter-spacing:-.02em!important;
+  color:#7b6055!important;
+  text-decoration:line-through!important;
+  text-decoration-thickness:1.3px!important;
+  opacity:.75!important;
+}
+body .services .price-card ul{
+  margin:20px 0!important;
+  padding-left:17px!important;
+  list-style:disc!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:12.5px!important;
+  line-height:1.58!important;
+  font-weight:400!important;
+  letter-spacing:-.01em!important;
+  color:#55614c!important;
+}
+body .services .price-card li{
+  margin:10px 0!important;
+  padding:0!important;
+}
+body .services .price-card li::before{display:none!important}
+body .services .price-card::marker,
+body .services .price-card li::marker{color:#83985f!important}
+body .services .price-card--featured li::marker{color:#ef7756!important}
+body .services .price-card__result{
+  margin-top:auto!important;
+  padding:17px 0!important;
+  border-top:1px dashed rgba(82,97,60,.30)!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:11.5px!important;
+  line-height:1.58!important;
+  font-weight:400!important;
+  color:#66705b!important;
+}
+body .services .price-card--featured .price-card__result{
+  border-top-color:rgba(82,62,52,.24)!important;
+  color:#6c5248!important;
+}
+body .services .price-card__result b{
+  display:inline!important;
+  font-weight:500!important;
+  color:#425136!important;
+}
+body .services .price-card__button{
+  width:100%!important;
+  min-height:50px!important;
+  margin-top:18px!important;
+  padding:0 18px!important;
+  border-radius:999px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:12px!important;
+  line-height:1!important;
+  font-weight:500!important;
+}
+body .services .price-card__button--outline{
+  background:transparent!important;
+  color:#566640!important;
+  border:1px solid #b1bc94!important;
+}
+body .services .price-card--featured .price-card__button{
+  background:#ef7756!important;
+  color:#fff!important;
+  border:1px solid #ef7756!important;
+}
+
+@media(max-width:900px){
+  body .services{padding-top:56px!important;padding-bottom:56px!important}
+  body .services .shell{width:min(100% - 30px,760px)!important}
+  body .services .services__head{grid-template-columns:1fr!important;gap:18px!important;margin-bottom:28px!important}
+  body .services .services__head h2{font-size:43px!important}
+  body .services .services__head p{max-width:560px!important;font-size:12px!important}
+  body .services .pricing{grid-template-columns:1fr!important;gap:15px!important}
+  body .services .price-card{min-height:0!important;padding:28px 26px 24px!important}
+  body .services .price-card:not(.price-card--featured) .price-card__head{margin-top:0!important}
+  body .services .price-card__head h3{font-size:17px!important}
+  body .services .price-card__head strong{font-size:28px!important}
+}
+
+@media(max-width:560px){
+  body .services .shell{width:calc(100% - 24px)!important}
+  body .services .services__head h2{font-size:38px!important}
+  body .services .price-card{padding:24px 20px 21px!important;border-radius:22px!important}
+  body .services .price-card ul{font-size:12.5px!important}
+  body .services .price-card__result{font-size:11.5px!important}
+  body .services .price-card__button{min-height:48px!important}
 }
