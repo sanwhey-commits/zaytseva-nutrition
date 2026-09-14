@@ -84,6 +84,41 @@
     }
   `);
 
+  addStyle(`
+    .services{padding-top:76px!important;padding-bottom:72px!important}
+    .services .shell{width:min(1100px,calc(100% - 64px))!important;max-width:none!important}
+    .services__head{display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(280px,.58fr)!important;gap:86px!important;align-items:end!important;margin-bottom:38px!important}
+    .services__head h2{margin:0!important;font-family:"Poiret One",sans-serif!important;font-size:54px!important;line-height:1.06!important;font-weight:400!important;letter-spacing:0!important;color:#55663f!important}
+    .services__head p{margin:0 0 7px!important;max-width:360px!important;font-family:"Manrope",sans-serif!important;font-size:14.5px!important;line-height:1.62!important;font-weight:400!important;letter-spacing:-.015em!important;color:#68735f!important}
+    .pricing{display:grid!important;grid-template-columns:1fr 1fr!important;gap:18px!important;align-items:stretch!important}
+    .price-card{position:relative!important;display:flex!important;flex-direction:column!important;min-height:590px!important;padding:34px 30px 27px!important;border:1px solid #ccd2b4!important;border-radius:28px!important;background:#faf8f2!important;box-shadow:none!important;overflow:hidden!important}
+    .price-card--featured{background:#f6bea9!important;border-color:#f6bea9!important;box-shadow:0 18px 42px rgba(89,70,57,.12)!important}
+    .badge{display:inline-flex!important;align-items:center!important;align-self:flex-start!important;min-height:25px!important;padding:0 12px!important;margin:0 0 22px!important;border:1px solid rgba(76,57,47,.42)!important;border-radius:999px!important;font-family:"Manrope",sans-serif!important;font-size:9px!important;line-height:1!important;font-weight:600!important;letter-spacing:.17em!important;color:#543d34!important;background:rgba(255,255,255,.12)!important}
+    .price-card__head{padding-bottom:22px!important;border-bottom:1px solid rgba(88,101,65,.18)!important}
+    .price-card--featured .price-card__head{border-bottom-color:rgba(94,62,50,.18)!important}
+    .price-card__head h3{margin:0 0 11px!important;font-family:"Manrope",sans-serif!important;font-size:19px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.025em!important;color:#27321f!important}
+    .price-card__head strong{display:block!important;margin:0!important;font-family:"Poiret One",sans-serif!important;font-size:35px!important;line-height:1.05!important;font-weight:400!important;letter-spacing:0!important;color:#566640!important}
+    .price-card--featured .price-card__head strong{display:flex!important;align-items:baseline!important;gap:14px!important;color:#d76145!important}
+    .price-card--featured .price-card__head strong::before{content:"15 000 ₽";font-family:"Manrope",sans-serif!important;font-size:17px!important;line-height:1!important;font-weight:400!important;letter-spacing:-.02em!important;color:#765c51!important;text-decoration:line-through!important;text-decoration-thickness:1.5px!important;text-decoration-color:#765c51!important;opacity:.78!important}
+    .price-card ul{margin:22px 0 0!important;padding:0!important;list-style:none!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1.5!important;font-weight:400!important;color:#53604b!important}
+    .price-card li{position:relative!important;padding:0 0 13px 18px!important;margin:0!important}
+    .price-card li::before{content:""!important;position:absolute!important;left:0!important;top:.68em!important;width:5px!important;height:5px!important;border-radius:50%!important;background:#83985f!important}
+    .price-card--featured li::before{background:#ef7756!important}
+    .price-card__result{margin-top:auto!important;padding:19px 0 18px!important;border-top:1px dashed rgba(88,101,65,.28)!important;font-family:"Manrope",sans-serif!important;font-size:13px!important;line-height:1.55!important;font-weight:400!important;color:#65715c!important}
+    .price-card--featured .price-card__result{border-top-color:rgba(94,62,50,.26)!important;color:#684d42!important}
+    .price-card__result b{font-weight:600!important;color:#3f4d35!important}.price-card--featured .price-card__result b{color:#4f392f!important}
+    .price-card__button{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-height:53px!important;margin-top:0!important;border-radius:999px!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:600!important;letter-spacing:-.012em!important;transition:transform .18s ease,opacity .18s ease!important}
+    .price-card__button:hover{transform:translateY(-1px)!important}
+    .price-card__button--outline{background:transparent!important;color:#55663f!important;border:1px solid #9eaa7b!important}
+    .price-card--featured .price-card__button{background:#ef7756!important;color:#fff!important;border:1px solid #ef7756!important}
+    @media(max-width:900px){
+      .services{padding-top:58px!important;padding-bottom:58px!important}.services .shell{width:min(100% - 30px,760px)!important}.services__head{grid-template-columns:1fr!important;gap:18px!important;margin-bottom:30px!important}.services__head h2{font-size:47px!important}.services__head p{max-width:560px!important;font-size:14px!important}.pricing{grid-template-columns:1fr!important;gap:15px!important}.price-card{min-height:0!important;padding:30px 27px 25px!important}.price-card__head h3{font-size:18px!important}.price-card__head strong{font-size:33px!important}
+    }
+    @media(max-width:560px){
+      .services{padding-top:48px!important;padding-bottom:48px!important}.services .shell{width:calc(100% - 24px)!important}.services__head h2{font-size:39px!important;line-height:1.08!important}.services__head p{font-size:13.5px!important;line-height:1.58!important}.price-card{padding:26px 21px 22px!important;border-radius:22px!important}.badge{margin-bottom:18px!important}.price-card__head h3{font-size:17px!important}.price-card__head strong{font-size:31px!important}.price-card--featured .price-card__head strong{gap:11px!important}.price-card--featured .price-card__head strong::before{font-size:15px!important}.price-card ul{font-size:13.5px!important}.price-card__result{font-size:12.5px!important}.price-card__button{min-height:51px!important;font-size:13.5px!important}
+    }
+  `);
+
   const oldBranch=document.querySelector('.hero__branch');
   if(oldBranch){const img=document.createElement('img');img.className='hero__branch-img';img.src='assets/branch.png';img.alt='';img.setAttribute('aria-hidden','true');oldBranch.replaceWith(img)}
 
