@@ -113,14 +113,39 @@ body .hero .photo-label{
   letter-spacing:.055em!important;
 }
 
+/* Пропорции исходника: сайт заметно уже */
+:root{--content-max:960px}
+.shell{width:min(var(--content-max),calc(100% - 64px))!important;margin-left:auto!important;margin-right:auto!important}
+body .hero .hero__grid{grid-template-columns:minmax(0,1fr) minmax(0,.94fr)!important;gap:46px!important}
+body .hero .hero__visual{min-height:555px!important}
+body .hero .hero__image{width:min(100%,430px)!important;max-height:535px!important}
+body .hero .hero__oval{width:108%!important;left:-4%!important;height:76%!important}
+body .hero h1{font-size:clamp(52px,4.7vw,64px)!important}
+body .hero .hero__lead{max-width:430px!important;font-size:15px!important}
+body .hero .hero__actions .btn{min-height:56px!important;padding:0 30px!important;font-size:15px!important}
+body .hero .underlink{font-size:13px!important}
+.contacts .shell{width:min(var(--content-max),calc(100% - 64px))!important}
+
+@media(max-width:1024px){
+  :root{--content-max:920px}
+  body .hero .hero__grid{gap:38px!important}
+  body .hero h1{font-size:56px!important}
+  body .hero .hero__image{width:min(100%,410px)!important}
+}
+
 @media(max-width:900px){
-  body .hero h1{font-size:58px!important}
+  .shell,.contacts .shell{width:min(100% - 30px,var(--content-max))!important}
+  body .hero .hero__grid{grid-template-columns:1fr!important;gap:26px!important}
+  body .hero .hero__visual{min-height:0!important}
+  body .hero .hero__image{width:min(76vw,450px)!important;max-height:none!important}
+  body .hero h1{font-size:56px!important}
   body .hero .hero__lead{font-size:15px!important}
 }
 
 @media(max-width:560px){
+  .shell,.contacts .shell{width:min(100% - 24px,var(--content-max))!important}
   .header .brand strong{font-size:16px!important}
-  body .hero h1{font-size:45px!important;line-height:1.08!important}
+  body .hero h1{font-size:44px!important;line-height:1.08!important}
   body .hero .hero__lead{font-size:14px!important;line-height:1.65!important}
   body .hero .hero__actions .btn{min-height:56px!important;font-size:15px!important;padding:0 25px!important}
   body .hero .underlink{font-size:13px!important}
