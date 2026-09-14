@@ -1,6 +1,6 @@
 (()=>{
   const visual=document.createElement('link');visual.rel='stylesheet';visual.href='visual.css?v=4';document.head.appendChild(visual);
-  const preciseType=document.createElement('link');preciseType.rel='stylesheet';preciseType.href='typography.css?v=3';document.head.appendChild(preciseType);
+  const preciseType=document.createElement('link');preciseType.rel='stylesheet';preciseType.href='typography.css?v=4';document.head.appendChild(preciseType);
 
   const font=document.createElement('link');font.rel='stylesheet';font.href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Poiret+One&display=swap';document.head.appendChild(font);
 
@@ -43,7 +43,6 @@
     body{font-family:var(--font-body);font-weight:300}
     .hero h1,
     .section-title,
-    .symptoms__box h2,
     .philosophy__lead h2,
     .about__heading h2,
     .diplomas__copy h3,
@@ -51,7 +50,7 @@
     .contacts__title{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:0!important}
     .hero h1{line-height:1.08!important;color:#52633d}
     .section-title{line-height:1.08!important}
-    .symptoms__box h2{line-height:1.13!important}
+    .symptoms__box h2{font-family:var(--font-body)!important;font-weight:600!important;letter-spacing:-.04em!important;line-height:1.16!important;color:#30241f!important}
     .philosophy__lead h2{line-height:1.12!important}
     .about__heading h2{line-height:1.08!important}
     .services__head h2{line-height:1.08!important}
@@ -77,6 +76,7 @@
     @media(max-width:560px){
       .hero h1{line-height:1.1!important}
       .section-title,.about__heading h2,.services__head h2{line-height:1.1!important}
+      .symptoms__box h2{font-weight:600!important}
     }
   `;
   document.head.appendChild(typographyStyle);
