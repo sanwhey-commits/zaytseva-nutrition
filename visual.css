@@ -486,3 +486,178 @@ body .reviews .review--large span{
   body .reviews .review--large p{font-size:14px!important}
   body .reviews .review--large span{grid-column:auto!important;padding-top:13px!important}
 }
+
+/* Частые вопросы — блок снятия возражений перед заявкой */
+body .faq{
+  padding-top:58px!important;
+  padding-bottom:72px!important;
+}
+body .faq .shell{
+  width:min(1100px,calc(100% - 64px))!important;
+  max-width:none!important;
+}
+body .faq .section-title{
+  margin:0 0 30px!important;
+  font-family:"Poiret One",sans-serif!important;
+  font-size:52px!important;
+  line-height:1.08!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  color:#55663f!important;
+}
+body .faq .section-title::after{
+  content:"Если сомневаетесь — начните с ответа на главный вопрос. Здесь собраны самые частые возражения перед первой консультацией.";
+  display:block!important;
+  max-width:690px!important;
+  margin-top:14px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:13px!important;
+  line-height:1.65!important;
+  font-weight:400!important;
+  letter-spacing:-.01em!important;
+  color:#6b7562!important;
+}
+body .faq .faq__list{
+  display:grid!important;
+  gap:11px!important;
+  border:0!important;
+}
+body .faq details{
+  position:relative!important;
+  overflow:hidden!important;
+  border:1px solid #ccd2b5!important;
+  border-radius:20px!important;
+  background:rgba(255,255,255,.22)!important;
+  transition:border-color .2s ease,background .2s ease,transform .2s ease!important;
+}
+body .faq details:hover{
+  border-color:#b5bf9a!important;
+  transform:translateY(-1px)!important;
+}
+body .faq details[open]{
+  border-color:#e6b49f!important;
+  background:#f9dfd3!important;
+}
+body .faq summary{
+  position:relative!important;
+  display:block!important;
+  min-height:72px!important;
+  padding:23px 74px 22px 24px!important;
+  list-style:none!important;
+  cursor:pointer!important;
+  font-size:0!important;
+  line-height:1!important;
+  color:transparent!important;
+}
+body .faq summary::-webkit-details-marker{display:none!important}
+body .faq summary::before{
+  display:block!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:17px!important;
+  line-height:1.42!important;
+  font-weight:500!important;
+  letter-spacing:-.025em!important;
+  color:#2f3c28!important;
+}
+body .faq details:nth-child(1) summary::before{content:"Не уверены, какой формат выбрать?"!important}
+body .faq details:nth-child(2) summary::before{content:"Придётся сидеть на строгой диете и отказываться от любимой еды?"!important}
+body .faq details:nth-child(3) summary::before{content:"А если я уже много раз начинал(а) и бросал(а)?"!important}
+body .faq details:nth-child(4) summary::before{content:"Что я получу после консультации?"!important}
+body .faq details:nth-child(5) summary::before{content:"Можно ли работать, если есть заболевания?"!important}
+body .faq summary::after{
+  content:"+"!important;
+  position:absolute!important;
+  right:22px!important;
+  top:50%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:34px!important;
+  height:34px!important;
+  transform:translateY(-50%)!important;
+  border:1px solid #b9c39f!important;
+  border-radius:50%!important;
+  background:#f7f3e9!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:20px!important;
+  line-height:1!important;
+  font-weight:300!important;
+  color:#66794a!important;
+}
+body .faq details[open] summary::after{
+  content:"−"!important;
+  border-color:#e0a990!important;
+  background:#f8cdbb!important;
+  color:#9a5847!important;
+}
+body .faq details p{
+  position:relative!important;
+  max-width:880px!important;
+  margin:0!important;
+  padding:0 72px 24px 24px!important;
+  font-size:0!important;
+  line-height:1!important;
+  color:transparent!important;
+}
+body .faq details p::before{
+  display:block!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:13.5px!important;
+  line-height:1.72!important;
+  font-weight:400!important;
+  letter-spacing:-.012em!important;
+  color:#64705c!important;
+}
+body .faq details:nth-child(1) p::before{
+  content:"Можно начать с разовой консультации. За одну встречу разберём Вашу ситуацию и определим, нужен ли дальнейший формат. Если достаточно плана — на этом можно остановиться. Если нужна поддержка при внедрении — подойдёт сопровождение."!important;
+}
+body .faq details:nth-child(2) p::before{
+  content:"Нет. Задача — не создать ещё один режим, который сложно выдержать, а подобрать изменения под Ваш обычный график, вкусы и привычки. Добавки не являются обязательной частью работы."!important;
+}
+body .faq details:nth-child(3) p::before{
+  content:"Именно поэтому мы не строим работу вокруг силы воли. Сначала разбираемся, что раньше мешало удерживать изменения, и начинаем с шагов, которые можно повторять в обычной жизни."!important;
+}
+body .faq details:nth-child(4) p::before{
+  content:"Вы получите понятное объяснение, что сейчас влияет на питание и самочувствие, персональные рекомендации и конкретные первые шаги. Без списка запретов «на всякий случай»."!important;
+}
+body .faq details:nth-child(5) p::before{
+  content:"Да, если задача находится в зоне нутрициологической поддержки. Работа не заменяет врача: при симптомах, диагнозах или необходимости лечения я предложу обратиться к профильному специалисту и буду учитывать медицинские рекомендации."!important;
+}
+body .faq .faq__list::after{
+  content:"Не нашли свой вопрос? Начните с разовой консультации — разберём Вашу ситуацию и выберем следующий шаг без лишних обязательств.";
+  display:block!important;
+  margin-top:10px!important;
+  padding:18px 22px!important;
+  border-radius:18px!important;
+  background:#81945c!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:13px!important;
+  line-height:1.55!important;
+  font-weight:500!important;
+  letter-spacing:-.01em!important;
+  color:#fff!important;
+}
+
+@media(max-width:900px){
+  body .faq{padding-top:48px!important;padding-bottom:58px!important}
+  body .faq .shell{width:min(100% - 30px,760px)!important}
+  body .faq .section-title{font-size:45px!important;margin-bottom:26px!important}
+  body .faq .section-title::after{font-size:12.5px!important;max-width:620px!important}
+  body .faq summary{min-height:68px!important;padding:21px 68px 20px 21px!important}
+  body .faq summary::before{font-size:16px!important}
+  body .faq details p{padding:0 64px 22px 21px!important}
+  body .faq details p::before{font-size:13px!important}
+}
+
+@media(max-width:560px){
+  body .faq .shell{width:calc(100% - 24px)!important}
+  body .faq .section-title{font-size:39px!important;line-height:1.1!important}
+  body .faq .section-title::after{font-size:12px!important;line-height:1.6!important}
+  body .faq details{border-radius:17px!important}
+  body .faq summary{min-height:64px!important;padding:19px 60px 18px 18px!important}
+  body .faq summary::before{font-size:15px!important;line-height:1.38!important}
+  body .faq summary::after{right:16px!important;width:30px!important;height:30px!important;font-size:18px!important}
+  body .faq details p{padding:0 18px 20px!important}
+  body .faq details p::before{font-size:12.5px!important;line-height:1.68!important}
+  body .faq .faq__list::after{padding:16px 18px!important;font-size:12.5px!important}
+}
