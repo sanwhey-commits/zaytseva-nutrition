@@ -103,11 +103,34 @@ body .hero .photo-label{
   padding:11px 18px!important;
 }
 
+/* Бегущая строка — ближе к оригиналу */
+.marquee{
+  min-height:52px!important;
+  display:flex!important;
+  align-items:center!important;
+  background:#83985f!important;
+}
+.marquee .marquee__track{
+  align-items:center!important;
+  animation-duration:29s!important;
+}
 .marquee .marquee__set{
   font-family:var(--hero-font)!important;
   font-size:13px!important;
+  line-height:1!important;
   font-weight:600!important;
-  letter-spacing:.055em!important;
+  letter-spacing:.075em!important;
+  gap:42px!important;
+  padding:18px 26px 19px!important;
+  white-space:nowrap!important;
+}
+.marquee .marquee__set i{
+  font-family:var(--hero-font)!important;
+  font-size:14px!important;
+  line-height:1!important;
+  font-weight:400!important;
+  color:#d8dfc2!important;
+  opacity:.95!important;
 }
 
 /* Пропорции страницы */
@@ -172,6 +195,7 @@ body .hero .underlink{font-size:13px!important}
   body .hero .hero__oval{width:93%!important;height:78%!important;left:3.5%!important;bottom:-7%!important}
   body .hero h1{font-size:56px!important}
   body .hero .hero__lead{font-size:15px!important}
+  .marquee .marquee__set{font-size:12.5px!important;gap:34px!important;padding:16px 22px 17px!important}
 }
 
 @media(max-width:560px){
@@ -182,4 +206,6 @@ body .hero .underlink{font-size:13px!important}
   body .hero .hero__lead{font-size:14px!important;line-height:1.65!important}
   body .hero .hero__actions .btn{min-height:56px!important;font-size:15px!important;padding:0 25px!important}
   body .hero .underlink{font-size:13px!important}
+  .marquee{min-height:48px!important}
+  .marquee .marquee__set{font-size:12px!important;gap:28px!important;padding:15px 18px 16px!important}
 }
