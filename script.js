@@ -1,5 +1,7 @@
 (()=>{
-  const visual=document.createElement('link');visual.rel='stylesheet';visual.href='visual.css?v=3';document.head.appendChild(visual);
+  const visual=document.createElement('link');visual.rel='stylesheet';visual.href='visual.css?v=4';document.head.appendChild(visual);
+
+  const font=document.createElement('link');font.rel='stylesheet';font.href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Poiret+One&display=swap';document.head.appendChild(font);
 
   const contactStyle=document.createElement('style');
   contactStyle.textContent=`
@@ -7,7 +9,7 @@
     .contacts{background:#87985f;color:#fff;padding:54px 0 24px}
     .contacts__layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.72fr);gap:92px;align-items:start}
     .contacts__label{display:block;margin-bottom:24px;font-size:11px;line-height:1;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.88)}
-    .contacts__title{margin:0;font-family:"Manrope",sans-serif;font-size:clamp(38px,4.4vw,56px);line-height:1.15;font-weight:300;letter-spacing:-.04em;color:#fffaf2}
+    .contacts__title{margin:0;font-size:clamp(38px,4.4vw,56px);line-height:1.15;font-weight:400;letter-spacing:0;color:#fffaf2}
     .contacts__lead{margin:18px 0 27px;max-width:570px;font-size:18px;line-height:1.55;font-weight:300;color:rgba(255,255,255,.93)}
     .contacts__button{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:58px;padding:0 31px;border-radius:999px;background:#ef7756;color:#fff;font-size:15px;font-weight:500;transition:.2s}
     .contacts__button:hover{transform:translateY(-1px);opacity:.97}
@@ -21,6 +23,50 @@
     @media(max-width:560px){.contacts{padding:38px 0 22px}.contacts__label{margin-bottom:18px;font-size:9px}.contacts__title{font-size:34px;line-height:1.18}.contacts__lead{font-size:16px;margin:17px 0 24px}.contacts__button{min-height:54px;padding:0 26px;font-size:14px}.contacts__right{grid-template-columns:1fr;gap:20px}.contacts__item-value{font-size:18px}.contacts__item-value--text{font-size:16px}.contacts__bottom{margin-top:32px;padding-top:17px;flex-direction:column;gap:10px;font-size:11px}.contacts__bottom span:last-child{text-align:left}}
   `;
   document.head.appendChild(contactStyle);
+
+  const typographyStyle=document.createElement('style');
+  typographyStyle.textContent=`
+    :root{--font-display:"Poiret One",sans-serif;--font-body:"Manrope",sans-serif}
+    body{font-family:var(--font-body);font-weight:300}
+    .hero h1,
+    .section-title,
+    .symptoms__box h2,
+    .philosophy__lead h2,
+    .about__heading h2,
+    .diplomas__copy h3,
+    .services__head h2,
+    .contacts__title{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:0!important}
+    .hero h1{line-height:1.08!important;color:#52633d}
+    .section-title{line-height:1.08!important}
+    .symptoms__box h2{line-height:1.13!important}
+    .philosophy__lead h2{line-height:1.12!important}
+    .about__heading h2{line-height:1.08!important}
+    .services__head h2{line-height:1.08!important}
+    .diplomas__copy h3{line-height:1.12!important}
+    .contacts__title{line-height:1.08!important}
+
+    .price-card__head strong,
+    .timeline span,
+    .review__accent{font-family:var(--font-display)!important;font-weight:400!important;letter-spacing:0!important}
+    .price-card__head strong{font-size:30px!important;line-height:1.05;color:#52633d}
+    .timeline span{font-size:24px!important;line-height:1}
+    .review__accent{font-size:42px!important;line-height:1}
+
+    .brand strong{font-family:var(--font-body);font-weight:400!important;letter-spacing:.035em}
+    .brand small,.nav,.btn,.underlink,.intro,.symptom p,.outcome,.principles,.about-card,.diploma-card,.services__head p,.price-card,.timeline h3,.timeline p,.review,.faq,.contacts{font-family:var(--font-body)!important}
+    .nav{font-weight:400}
+    .btn,.price-card__button,.contacts__button{font-weight:500}
+    .outcome h3,.contacts__label,.contacts__item-label{font-weight:600}
+    .principles h3,.about-card h3,.price-card__head h3,.timeline h3{font-weight:400}
+    .faq summary{font-weight:400;letter-spacing:-.01em}
+    .hero__lead,.philosophy__lead p,.services__head p,.about-card p,.review p,.faq details p{font-weight:300}
+
+    @media(max-width:560px){
+      .hero h1{line-height:1.1!important}
+      .section-title,.about__heading h2,.services__head h2{line-height:1.1!important}
+    }
+  `;
+  document.head.appendChild(typographyStyle);
 
   const oldBranch=document.querySelector('.hero__branch');
   if(oldBranch){const img=document.createElement('img');img.className='hero__branch-img';img.src='assets/branch.png';img.alt='';img.setAttribute('aria-hidden','true');oldBranch.replaceWith(img)}
