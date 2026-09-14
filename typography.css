@@ -34,17 +34,17 @@ body .symptoms__box h2{max-width:720px!important;margin:0 0 12px!important;font-
 .outcome ul::after{min-height:51px!important;display:flex!important;align-items:center!important;box-sizing:border-box!important;padding:13px 0 13px 17px!important;font-family:"Manrope",sans-serif!important;font-size:14.5px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.02em!important;background-repeat:no-repeat!important;background-position:left center!important;background-size:5px 5px!important}
 .outcome--green ul::after{content:"Привычки, которые легко соблюдать";color:#fffdf7!important;background-image:radial-gradient(circle,#f3bba8 0 2.4px,transparent 2.6px)!important}.outcome--peach ul::after{content:"Любовь и уважение к своему телу";color:#2c231f!important;background-image:radial-gradient(circle,#80965a 0 2.4px,transparent 2.6px)!important}
 
-/* Блок «Моя цель» — крупнее и плотнее, как в оригинале */
+/* Блок «Моя цель» — чуть шире, чтобы текст дышал */
 .philosophy{padding-top:64px!important;padding-bottom:72px!important}
-.philosophy .shell{width:min(960px,calc(100% - 64px))!important;max-width:none!important}
-.philosophy__lead{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,.68fr)!important;gap:72px!important;align-items:end!important}
-body .philosophy__lead h2{max-width:610px!important;margin:0!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;letter-spacing:0!important;color:transparent!important}
+.philosophy .shell{width:min(1080px,calc(100% - 64px))!important;max-width:none!important}
+.philosophy__lead{display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(0,.72fr)!important;gap:66px!important;align-items:end!important}
+body .philosophy__lead h2{max-width:680px!important;margin:0!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;letter-spacing:0!important;color:transparent!important}
 body .philosophy__lead h2::before{content:"Моя цель — помочь Вам\Aперестать бороться\Aсо своим организмом\Aи научиться его\Aпонимать.";display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:54px!important;line-height:1.1!important;font-weight:400!important;letter-spacing:-.045em!important;color:#566640!important;-webkit-text-stroke:.12px currentColor!important}
-body .philosophy__lead p{max-width:365px!important;margin:0 0 8px!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;color:transparent!important}
+body .philosophy__lead p{max-width:410px!important;margin:0 0 8px!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;color:transparent!important}
 body .philosophy__lead p::before{content:"Строгие ограничения редко дают долгосрочный результат. Понимание своего организма остается с Вами надолго.";display:block!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1.62!important;font-weight:400!important;letter-spacing:-.015em!important;color:#6b7865!important}
 .philosophy .principles{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0!important;margin-top:46px!important;border-top:0!important}
-.philosophy .principles article{min-height:205px!important;padding:0 24px 0 25px!important;border-right:0!important;border-left:1px solid #d4d9c2!important}
-.philosophy .principles article:first-child{padding-left:25px!important}
+.philosophy .principles article{min-height:205px!important;padding:0 22px 0 23px!important;border-right:0!important;border-left:1px solid #d4d9c2!important}
+.philosophy .principles article:first-child{padding-left:23px!important}
 .philosophy .principles span{display:block!important;margin:0 0 15px!important;font-family:"Manrope",sans-serif!important;font-size:11.5px!important;line-height:1!important;font-weight:400!important;color:#7c8965!important}
 .philosophy .principles h3{margin:0 0 13px!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;color:transparent!important}
 .philosophy .principles h3::before{display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:17px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.028em!important;color:#26331f!important}
