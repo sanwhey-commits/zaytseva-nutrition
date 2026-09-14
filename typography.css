@@ -1,270 +1,66 @@
 @import url('typography-base.css');
 
-/* Блок «Если Вам знакомо...» — компактнее, ближе к оригинальному масштабу */
-.symptoms{
-  padding-top:68px!important;
-  padding-bottom:68px!important;
-}
-.symptoms .shell{
-  width:min(960px,calc(100% - 64px))!important;
-  max-width:none!important;
-}
-.symptoms__box{
-  background:#f8bea9!important;
-  border-radius:28px!important;
-  padding:39px 34px 34px!important;
-  box-sizing:border-box!important;
-}
-body .symptoms__box h2{
-  max-width:720px!important;
-  margin:0 0 12px!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:34px!important;
-  line-height:1.16!important;
-  font-weight:400!important;
-  letter-spacing:-.032em!important;
-  color:#30241f!important;
-  -webkit-text-stroke:0!important;
-}
-.symptoms__box .intro{
-  margin:0!important;
-  font-size:0!important;
-  line-height:1!important;
-}
-.symptoms__box .intro::before{
-  content:"Не спешите винить себя. Во многих случаях за ними могут стоять особенности питания и образа жизни.";
-  display:block!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:12px!important;
-  line-height:1.5!important;
-  font-weight:400!important;
-  letter-spacing:-.015em!important;
-  color:#4d352b!important;
-}
-.symptoms__grid{
-  display:grid!important;
-  grid-template-columns:repeat(6,minmax(0,1fr))!important;
-  gap:11px!important;
-  margin-top:26px!important;
-}
-.symptom{
-  min-height:104px!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:space-between!important;
-  gap:18px!important;
-  padding:0 21px!important;
-  box-sizing:border-box!important;
-  border-radius:17px!important;
-  background:#f9e8df!important;
-}
-.symptom--wide{grid-column:span 3!important}
-.symptom:not(.symptom--wide){grid-column:span 2!important}
-.symptom p{
-  margin:0!important;
-  min-width:0!important;
-  font-size:0!important;
-  line-height:1!important;
-}
-.symptom p::before{
-  display:block!important;
-  white-space:pre-line!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:14.5px!important;
-  line-height:1.4!important;
-  font-weight:500!important;
-  letter-spacing:-.018em!important;
-  color:#172414!important;
-}
-.symptom:nth-child(1) p::before{content:"Постоянная усталость,\Aдаже после отдыха"}
-.symptom:nth-child(2) p::before{content:"Вес стоит на месте,\Aне смотря на ваши усилия"}
-.symptom:nth-child(3) p::before{content:"Вздутие\Aи дискомфорт\Aпосле еды"}
-.symptom:nth-child(4) p::before{content:"Постоянная тяга\Aк сладкому"}
-.symptom:nth-child(5) p::before{content:"Пытаетесь начать «новую\Aжизнь» каждый\Aпонедельник"}
-.symptom span{
-  display:block!important;
-  width:38px!important;
-  height:38px!important;
-  flex:0 0 38px!important;
-  font-size:0!important;
-  color:transparent!important;
-  background-repeat:no-repeat!important;
-  background-position:center!important;
-  background-size:36px 36px!important;
-  opacity:.88!important;
-}
-.symptom:nth-child(1) span{background-image:url('assets/icon-fatigue.svg')!important}
-.symptom:nth-child(2) span{background-image:url('assets/icon-scale.svg')!important}
-.symptom:nth-child(3) span{background-image:url('assets/icon-bloating.svg')!important}
-.symptom:nth-child(4) span{background-image:url('assets/icon-sweet.svg')!important}
-.symptom:nth-child(5) span{background-image:url('assets/icon-monday.svg')!important}
+/* Блок «Если Вам знакомо...» */
+.symptoms{padding-top:68px!important;padding-bottom:68px!important}
+.symptoms .shell{width:min(960px,calc(100% - 64px))!important;max-width:none!important}
+.symptoms__box{background:#f8bea9!important;border-radius:28px!important;padding:39px 34px 34px!important;box-sizing:border-box!important}
+body .symptoms__box h2{max-width:720px!important;margin:0 0 12px!important;font-family:"Manrope",sans-serif!important;font-size:34px!important;line-height:1.16!important;font-weight:400!important;letter-spacing:-.032em!important;color:#30241f!important;-webkit-text-stroke:0!important}
+.symptoms__box .intro{margin:0!important;font-size:0!important;line-height:1!important}
+.symptoms__box .intro::before{content:"Не спешите винить себя. Во многих случаях за ними могут стоять особенности питания и образа жизни.";display:block!important;font-family:"Manrope",sans-serif!important;font-size:12px!important;line-height:1.5!important;font-weight:400!important;letter-spacing:-.015em!important;color:#4d352b!important}
+.symptoms__grid{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:11px!important;margin-top:26px!important}
+.symptom{min-height:104px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:18px!important;padding:0 21px!important;box-sizing:border-box!important;border-radius:17px!important;background:#f9e8df!important}
+.symptom--wide{grid-column:span 3!important}.symptom:not(.symptom--wide){grid-column:span 2!important}
+.symptom p{margin:0!important;min-width:0!important;font-size:0!important;line-height:1!important}
+.symptom p::before{display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:14.5px!important;line-height:1.4!important;font-weight:500!important;letter-spacing:-.018em!important;color:#172414!important}
+.symptom:nth-child(1) p::before{content:"Постоянная усталость,\Aдаже после отдыха"}.symptom:nth-child(2) p::before{content:"Вес стоит на месте,\Aне смотря на ваши усилия"}.symptom:nth-child(3) p::before{content:"Вздутие\Aи дискомфорт\Aпосле еды"}.symptom:nth-child(4) p::before{content:"Постоянная тяга\Aк сладкому"}.symptom:nth-child(5) p::before{content:"Пытаетесь начать «новую\Aжизнь» каждый\Aпонедельник"}
+.symptom span{display:block!important;width:38px!important;height:38px!important;flex:0 0 38px!important;font-size:0!important;color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:36px 36px!important;opacity:.88!important}
+.symptom:nth-child(1) span{background-image:url('assets/icon-fatigue.svg')!important}.symptom:nth-child(2) span{background-image:url('assets/icon-scale.svg')!important}.symptom:nth-child(3) span{background-image:url('assets/icon-bloating.svg')!important}.symptom:nth-child(4) span{background-image:url('assets/icon-sweet.svg')!important}.symptom:nth-child(5) span{background-image:url('assets/icon-monday.svg')!important}
 
-/* Блок «Каким человеком Вы станете?» — под референс */
-.outcomes{
-  padding-top:50px!important;
-  padding-bottom:62px!important;
-}
-.outcomes .shell{
-  width:min(960px,calc(100% - 64px))!important;
-  max-width:none!important;
-}
-.outcomes .section-title{
-  margin:0 0 36px!important;
-  font-size:0!important;
-  line-height:1!important;
-}
-.outcomes .section-title::before{
-  content:"Каким человеком Вы станете?";
-  display:block!important;
-  font-family:"Poiret One",sans-serif!important;
-  font-size:44px!important;
-  line-height:1.1!important;
-  font-weight:400!important;
-  letter-spacing:0!important;
-  color:#596a40!important;
-}
-.outcomes__grid{
-  display:grid!important;
-  grid-template-columns:1fr 1fr!important;
-  gap:18px!important;
-  align-items:stretch!important;
-}
-.outcome{
-  min-height:365px!important;
-  padding:37px 36px 30px!important;
-  border-radius:25px!important;
-  box-sizing:border-box!important;
-}
-.outcome--green{
-  background:#83965d!important;
-  color:#fffdf7!important;
-}
-.outcome--peach{
-  background:#f2bea9!important;
-  color:#2c231f!important;
-}
-.outcome h3{
-  margin:0 0 20px!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:12px!important;
-  line-height:1!important;
-  font-weight:700!important;
-  letter-spacing:.23em!important;
-  text-transform:uppercase!important;
-}
-.outcome--green h3{color:#f7f3e9!important}
-.outcome--peach h3{color:#3d2d27!important}
-.outcome ul{
-  list-style:none!important;
-  margin:0!important;
-  padding:0!important;
-}
-.outcome li{
-  position:relative!important;
-  min-height:51px!important;
-  display:flex!important;
-  align-items:center!important;
-  padding:13px 0 13px 17px!important;
-  font-size:0!important;
-  line-height:1!important;
-  border-bottom:1px solid rgba(255,255,255,.22)!important;
-}
-.outcome--peach li{border-bottom-color:rgba(74,56,48,.18)!important}
-.outcome li::before{
-  content:""!important;
-  position:absolute!important;
-  left:0!important;
-  top:50%!important;
-  width:5px!important;
-  height:5px!important;
-  margin-top:-2.5px!important;
-  border-radius:50%!important;
-  background:#f3bba8!important;
-}
-.outcome--peach li::before{background:#80965a!important}
-.outcome li::after{
-  display:block!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:14.5px!important;
-  line-height:1.35!important;
-  font-weight:500!important;
-  letter-spacing:-.02em!important;
-}
-.outcome--green li:nth-child(1)::after{content:"Лучшее самочувствие"}
-.outcome--green li:nth-child(2)::after{content:"Больше энергии"}
-.outcome--green li:nth-child(3)::after{content:"Комфортный вес"}
-.outcome--green li:nth-child(4)::after{content:"Понимание своего питания"}
-.outcome--green li:nth-child(5)::after{content:"Улучшение показателей здоровья"}
-.outcome--peach li:nth-child(1)::after{content:"Спокойствие вместо тревоги"}
-.outcome--peach li:nth-child(2)::after{content:"Уверенность в своём теле"}
-.outcome--peach li:nth-child(3)::after{content:"Понимание, что делать дальше"}
-.outcome--peach li:nth-child(4)::after{content:"Свобода от постоянных диет"}
-.outcome--peach li:nth-child(5)::after{content:"Ощущение контроля над своим здоровьем"}
-.outcome ul::after{
-  min-height:51px!important;
-  display:flex!important;
-  align-items:center!important;
-  box-sizing:border-box!important;
-  padding:13px 0 13px 17px!important;
-  font-family:"Manrope",sans-serif!important;
-  font-size:14.5px!important;
-  line-height:1.35!important;
-  font-weight:500!important;
-  letter-spacing:-.02em!important;
-  background-repeat:no-repeat!important;
-  background-position:left center!important;
-  background-size:5px 5px!important;
-}
-.outcome--green ul::after{
-  content:"Привычки, которые легко соблюдать";
-  color:#fffdf7!important;
-  background-image:radial-gradient(circle,#f3bba8 0 2.4px,transparent 2.6px)!important;
-}
-.outcome--peach ul::after{
-  content:"Любовь и уважение к своему телу";
-  color:#2c231f!important;
-  background-image:radial-gradient(circle,#80965a 0 2.4px,transparent 2.6px)!important;
-}
+/* Блок «Каким человеком Вы станете?» */
+.outcomes{padding-top:50px!important;padding-bottom:62px!important}
+.outcomes .shell{width:min(960px,calc(100% - 64px))!important;max-width:none!important}
+.outcomes .section-title{margin:0 0 36px!important;font-size:0!important;line-height:1!important}
+.outcomes .section-title::before{content:"Каким человеком Вы станете?";display:block!important;font-family:"Poiret One",sans-serif!important;font-size:44px!important;line-height:1.1!important;font-weight:400!important;letter-spacing:0!important;color:#596a40!important}
+.outcomes__grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:18px!important;align-items:stretch!important}
+.outcome{min-height:365px!important;padding:37px 36px 30px!important;border-radius:25px!important;box-sizing:border-box!important}
+.outcome--green{background:#83965d!important;color:#fffdf7!important}.outcome--peach{background:#f2bea9!important;color:#2c231f!important}
+.outcome h3{margin:0 0 20px!important;font-family:"Manrope",sans-serif!important;font-size:12px!important;line-height:1!important;font-weight:700!important;letter-spacing:.23em!important;text-transform:uppercase!important}.outcome--green h3{color:#f7f3e9!important}.outcome--peach h3{color:#3d2d27!important}
+.outcome ul{list-style:none!important;margin:0!important;padding:0!important}
+.outcome li{position:relative!important;min-height:51px!important;display:flex!important;align-items:center!important;padding:13px 0 13px 17px!important;font-size:0!important;line-height:1!important;border-bottom:1px solid rgba(255,255,255,.22)!important}.outcome--peach li{border-bottom-color:rgba(74,56,48,.18)!important}
+.outcome li::before{content:""!important;position:absolute!important;left:0!important;top:50%!important;width:5px!important;height:5px!important;margin-top:-2.5px!important;border-radius:50%!important;background:#f3bba8!important}.outcome--peach li::before{background:#80965a!important}
+.outcome li::after{display:block!important;font-family:"Manrope",sans-serif!important;font-size:14.5px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.02em!important}
+.outcome--green li:nth-child(1)::after{content:"Лучшее самочувствие"}.outcome--green li:nth-child(2)::after{content:"Больше энергии"}.outcome--green li:nth-child(3)::after{content:"Комфортный вес"}.outcome--green li:nth-child(4)::after{content:"Понимание своего питания"}.outcome--green li:nth-child(5)::after{content:"Улучшение показателей здоровья"}
+.outcome--peach li:nth-child(1)::after{content:"Спокойствие вместо тревоги"}.outcome--peach li:nth-child(2)::after{content:"Уверенность в своём теле"}.outcome--peach li:nth-child(3)::after{content:"Понимание, что делать дальше"}.outcome--peach li:nth-child(4)::after{content:"Свобода от постоянных диет"}.outcome--peach li:nth-child(5)::after{content:"Ощущение контроля над своим здоровьем"}
+.outcome ul::after{min-height:51px!important;display:flex!important;align-items:center!important;box-sizing:border-box!important;padding:13px 0 13px 17px!important;font-family:"Manrope",sans-serif!important;font-size:14.5px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.02em!important;background-repeat:no-repeat!important;background-position:left center!important;background-size:5px 5px!important}
+.outcome--green ul::after{content:"Привычки, которые легко соблюдать";color:#fffdf7!important;background-image:radial-gradient(circle,#f3bba8 0 2.4px,transparent 2.6px)!important}.outcome--peach ul::after{content:"Любовь и уважение к своему телу";color:#2c231f!important;background-image:radial-gradient(circle,#80965a 0 2.4px,transparent 2.6px)!important}
+
+/* Блок «Моя цель» — крупнее и плотнее, как в оригинале */
+.philosophy{padding-top:64px!important;padding-bottom:72px!important}
+.philosophy .shell{width:min(960px,calc(100% - 64px))!important;max-width:none!important}
+.philosophy__lead{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,.68fr)!important;gap:72px!important;align-items:end!important}
+body .philosophy__lead h2{max-width:610px!important;margin:0!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;letter-spacing:0!important;color:transparent!important}
+body .philosophy__lead h2::before{content:"Моя цель — помочь Вам\Aперестать бороться\Aсо своим организмом\Aи научиться его\Aпонимать.";display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:54px!important;line-height:1.1!important;font-weight:400!important;letter-spacing:-.045em!important;color:#566640!important;-webkit-text-stroke:.12px currentColor!important}
+body .philosophy__lead p{max-width:365px!important;margin:0 0 8px!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;font-weight:400!important;color:transparent!important}
+body .philosophy__lead p::before{content:"Строгие ограничения редко дают долгосрочный результат. Понимание своего организма остается с Вами надолго.";display:block!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1.62!important;font-weight:400!important;letter-spacing:-.015em!important;color:#6b7865!important}
+.philosophy .principles{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:0!important;margin-top:46px!important;border-top:0!important}
+.philosophy .principles article{min-height:205px!important;padding:0 24px 0 25px!important;border-right:0!important;border-left:1px solid #d4d9c2!important}
+.philosophy .principles article:first-child{padding-left:25px!important}
+.philosophy .principles span{display:block!important;margin:0 0 15px!important;font-family:"Manrope",sans-serif!important;font-size:11.5px!important;line-height:1!important;font-weight:400!important;color:#7c8965!important}
+.philosophy .principles h3{margin:0 0 13px!important;font-size:0!important;line-height:1!important;font-family:"Manrope",sans-serif!important;color:transparent!important}
+.philosophy .principles h3::before{display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:17px!important;line-height:1.35!important;font-weight:500!important;letter-spacing:-.028em!important;color:#26331f!important}
+.philosophy .principles article:nth-child(1) h3::before{content:"Понимание организма\Aвместо запретов"}.philosophy .principles article:nth-child(2) h3::before{content:"Поддержка вместо\Aосуждения"}.philosophy .principles article:nth-child(3) h3::before{content:"Привычки вместо диет"}.philosophy .principles article:nth-child(4) h3::before{content:"Маленькие шаги вместо\Aидеальности"}
+.philosophy .principles p{margin:0!important;font-size:0!important;line-height:1!important;color:transparent!important}
+.philosophy .principles p::before{display:block!important;white-space:pre-line!important;font-family:"Manrope",sans-serif!important;font-size:12.5px!important;line-height:1.65!important;font-weight:400!important;letter-spacing:-.012em!important;color:#6b7865!important}
+.philosophy .principles article:nth-child(1) p::before{content:"Объясняю простым языком, как\Aпитание, привычки\Aи образ жизни влияют\Aна Ваше самочувствие."}.philosophy .principles article:nth-child(2) p::before{content:"Без чувства вины и давления.\AТолько спокойный разбор\Aситуации и рекомендации,\Aкоторые подходят именно Вам."}.philosophy .principles article:nth-child(3) p::before{content:"Питание должно работать\Aв обычной жизни, а не только\Aнесколько недель."}.philosophy .principles article:nth-child(4) p::before{content:"Устойчивые изменения важнее\Aидеального плана, которого\Aневозможно придерживаться\Aдолго."}
 
 @media(max-width:900px){
-  .symptoms{padding-top:56px!important;padding-bottom:56px!important}
-  .symptoms .shell{width:min(100% - 30px,760px)!important}
-  .symptoms__box{padding:32px 25px 27px!important;border-radius:24px!important}
-  body .symptoms__box h2{font-size:31px!important;line-height:1.17!important;font-weight:400!important}
-  .symptoms__box .intro::before{font-size:12px!important}
-  .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:24px!important}
-  .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:100px!important;padding:0 19px!important}
-  .symptom:last-child{grid-column:1/-1!important}
-  .symptom p::before{font-size:14.5px!important;font-weight:500!important}
-  .symptom span{width:35px!important;height:35px!important;flex-basis:35px!important;background-size:33px 33px!important}
-
-  .outcomes{padding-top:46px!important;padding-bottom:54px!important}
-  .outcomes .shell{width:min(100% - 30px,760px)!important}
-  .outcomes .section-title{margin-bottom:27px!important}
-  .outcomes .section-title::before{font-size:38px!important}
-  .outcomes__grid{grid-template-columns:1fr!important;gap:14px!important}
-  .outcome{min-height:0!important;padding:31px 28px 25px!important;border-radius:23px!important}
-  .outcome li,.outcome ul::after{min-height:48px!important}
-  .outcome li::after,.outcome ul::after{font-size:14px!important}
+  .symptoms{padding-top:56px!important;padding-bottom:56px!important}.symptoms .shell{width:min(100% - 30px,760px)!important}.symptoms__box{padding:32px 25px 27px!important;border-radius:24px!important}body .symptoms__box h2{font-size:31px!important}.symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:24px!important}.symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:100px!important;padding:0 19px!important}.symptom:last-child{grid-column:1/-1!important}.symptom p::before{font-size:14.5px!important}.symptom span{width:35px!important;height:35px!important;flex-basis:35px!important;background-size:33px 33px!important}
+  .outcomes{padding-top:46px!important;padding-bottom:54px!important}.outcomes .shell{width:min(100% - 30px,760px)!important}.outcomes .section-title{margin-bottom:27px!important}.outcomes .section-title::before{font-size:38px!important}.outcomes__grid{grid-template-columns:1fr!important;gap:14px!important}.outcome{min-height:0!important;padding:31px 28px 25px!important;border-radius:23px!important}.outcome li,.outcome ul::after{min-height:48px!important}.outcome li::after,.outcome ul::after{font-size:14px!important}
+  .philosophy{padding-top:52px!important;padding-bottom:58px!important}.philosophy .shell{width:min(100% - 30px,760px)!important}.philosophy__lead{grid-template-columns:1fr!important;gap:22px!important;align-items:start!important}body .philosophy__lead h2::before{font-size:46px!important;line-height:1.08!important}body .philosophy__lead p{max-width:520px!important}body .philosophy__lead p::before{font-size:14px!important}.philosophy .principles{grid-template-columns:1fr 1fr!important;margin-top:36px!important}.philosophy .principles article{min-height:185px!important;padding:0 20px 18px!important}.philosophy .principles h3::before{font-size:16.5px!important}.philosophy .principles p::before{font-size:12.5px!important}
 }
 
 @media(max-width:560px){
-  .symptoms{padding-top:46px!important;padding-bottom:50px!important}
-  .symptoms .shell{width:calc(100% - 24px)!important}
-  .symptoms__box{padding:25px 18px 20px!important;border-radius:20px!important}
-  body .symptoms__box h2{font-size:27px!important;line-height:1.18!important;letter-spacing:-.028em!important;font-weight:400!important}
-  .symptoms__box .intro::before{font-size:11.5px!important}
-  .symptoms__grid{grid-template-columns:1fr!important;gap:9px!important;margin-top:21px!important}
-  .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:92px!important;padding:0 16px!important}
-  .symptom p::before{font-size:14px!important;font-weight:500!important}
-  .symptom span{width:32px!important;height:32px!important;flex-basis:32px!important;background-size:30px 30px!important}
-
-  .outcomes{padding-top:40px!important;padding-bottom:48px!important}
-  .outcomes .shell{width:calc(100% - 24px)!important}
-  .outcomes .section-title{margin-bottom:22px!important}
-  .outcomes .section-title::before{font-size:32px!important;line-height:1.12!important}
-  .outcome{padding:27px 21px 22px!important;border-radius:20px!important}
-  .outcome h3{font-size:11px!important;margin-bottom:15px!important}
-  .outcome li,.outcome ul::after{min-height:45px!important;padding-top:11px!important;padding-bottom:11px!important}
-  .outcome li::after,.outcome ul::after{font-size:13.5px!important}
+  .symptoms{padding-top:46px!important;padding-bottom:50px!important}.symptoms .shell{width:calc(100% - 24px)!important}.symptoms__box{padding:25px 18px 20px!important;border-radius:20px!important}body .symptoms__box h2{font-size:27px!important}.symptoms__grid{grid-template-columns:1fr!important;gap:9px!important;margin-top:21px!important}.symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:92px!important;padding:0 16px!important}.symptom p::before{font-size:14px!important}.symptom span{width:32px!important;height:32px!important;flex-basis:32px!important;background-size:30px 30px!important}
+  .outcomes{padding-top:40px!important;padding-bottom:48px!important}.outcomes .shell{width:calc(100% - 24px)!important}.outcomes .section-title{margin-bottom:22px!important}.outcomes .section-title::before{font-size:32px!important}.outcome{padding:27px 21px 22px!important;border-radius:20px!important}.outcome h3{font-size:11px!important;margin-bottom:15px!important}.outcome li,.outcome ul::after{min-height:45px!important}.outcome li::after,.outcome ul::after{font-size:13.5px!important}
+  .philosophy{padding-top:44px!important;padding-bottom:48px!important}.philosophy .shell{width:calc(100% - 24px)!important}body .philosophy__lead h2::before{font-size:38px!important;line-height:1.08!important}body .philosophy__lead p::before{font-size:13.5px!important;line-height:1.6!important}.philosophy .principles{grid-template-columns:1fr!important;margin-top:30px!important}.philosophy .principles article{min-height:0!important;padding:0 0 22px 17px!important}.philosophy .principles h3::before{font-size:17px!important}.philosophy .principles p::before{font-size:13px!important}
 }
