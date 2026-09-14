@@ -263,9 +263,9 @@ body .hero .underlink{font-size:13px!important}
   white-space:pre-line!important;
   font-family:var(--hero-font)!important;
   font-size:16px!important;
-  line-height:1.42!important;
-  font-weight:400!important;
-  letter-spacing:-.025em!important;
+  line-height:1.39!important;
+  font-weight:500!important;
+  letter-spacing:-.022em!important;
   color:#263020!important;
 }
 .symptom:nth-child(1) p::before{content:"Постоянная усталость,\Aдаже после отдыха"}
@@ -318,7 +318,7 @@ body .hero .underlink{font-size:13px!important}
   .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:110px!important;padding:0 21px!important}
   .symptom:last-child{grid-column:1/-1!important}
-  .symptom p::before{font-size:15px!important}
+  .symptom p::before{font-size:15px!important;font-weight:500!important}
   .symptom span{width:38px!important;height:38px!important;flex-basis:38px!important;background-size:36px 36px!important}
 }
 
@@ -340,6 +340,6 @@ body .hero .underlink{font-size:13px!important}
   .symptoms__box .intro::before{font-size:12px!important}
   .symptoms__grid{grid-template-columns:1fr!important;gap:10px!important;margin-top:24px!important}
   .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:104px!important;padding:0 18px!important}
-  .symptom p::before{font-size:14px!important}
+  .symptom p::before{font-size:14px!important;font-weight:500!important}
   .symptom span{width:34px!important;height:34px!important;flex-basis:34px!important;background-size:32px 32px!important}
 }
