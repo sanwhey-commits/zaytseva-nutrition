@@ -1,5 +1,6 @@
 (()=>{
   const visual=document.createElement('link');visual.rel='stylesheet';visual.href='visual.css?v=4';document.head.appendChild(visual);
+  const preciseType=document.createElement('link');preciseType.rel='stylesheet';preciseType.href='typography.css?v=2';document.head.appendChild(preciseType);
 
   const font=document.createElement('link');font.rel='stylesheet';font.href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Poiret+One&display=swap';document.head.appendChild(font);
 
@@ -101,6 +102,13 @@
 
   if(oldContact)oldContact.insertAdjacentElement('beforebegin',footer);else document.body.appendChild(footer);
   oldContact?.remove();oldFooter?.remove();
+
+  const bigReview=document.querySelector('.review--large p');
+  if(bigReview){
+    bigReview.innerHTML=bigReview.textContent
+      .replace('мама ощущала заботу','<strong>мама ощущала заботу</strong>')
+      .replace('спокойнее относиться к рациону','<strong>спокойнее относиться к рациону</strong>');
+  }
 
   const c=document.querySelector('[data-carousel]');
   if(c){const t=c.querySelector('.carousel__track'),p=document.querySelector('[data-carousel-prev]'),n=document.querySelector('[data-carousel-next]');const step=()=>{const f=t.querySelector('.about-card');return f?f.getBoundingClientRect().width+parseFloat(getComputedStyle(t).gap||18):t.clientWidth};p?.addEventListener('click',()=>t.scrollBy({left:-step(),behavior:'smooth'}));n?.addEventListener('click',()=>t.scrollBy({left:step(),behavior:'smooth'}));t.querySelectorAll('.about-card').forEach(card=>card.addEventListener('click',e=>{if(e.target.closest('a,button'))return;const a=card.getBoundingClientRect(),b=t.getBoundingClientRect(),d=(a.left+a.width/2)-(b.left+b.width/2);if(Math.abs(d)>a.width*.4)t.scrollBy({left:d,behavior:'smooth'})}))}
