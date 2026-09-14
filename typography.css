@@ -99,6 +99,133 @@ body .symptoms__box h2{
 .symptom:nth-child(4) span{background-image:url('assets/icon-sweet.svg')!important}
 .symptom:nth-child(5) span{background-image:url('assets/icon-monday.svg')!important}
 
+/* Блок «Каким человеком Вы станете?» — под референс */
+.outcomes{
+  padding-top:50px!important;
+  padding-bottom:62px!important;
+}
+.outcomes .shell{
+  width:min(960px,calc(100% - 64px))!important;
+  max-width:none!important;
+}
+.outcomes .section-title{
+  margin:0 0 36px!important;
+  font-size:0!important;
+  line-height:1!important;
+}
+.outcomes .section-title::before{
+  content:"Каким человеком Вы станете?";
+  display:block!important;
+  font-family:"Poiret One",sans-serif!important;
+  font-size:44px!important;
+  line-height:1.1!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+  color:#596a40!important;
+}
+.outcomes__grid{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:18px!important;
+  align-items:stretch!important;
+}
+.outcome{
+  min-height:365px!important;
+  padding:37px 36px 30px!important;
+  border-radius:25px!important;
+  box-sizing:border-box!important;
+}
+.outcome--green{
+  background:#83965d!important;
+  color:#fffdf7!important;
+}
+.outcome--peach{
+  background:#f2bea9!important;
+  color:#2c231f!important;
+}
+.outcome h3{
+  margin:0 0 20px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:12px!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:.23em!important;
+  text-transform:uppercase!important;
+}
+.outcome--green h3{color:#f7f3e9!important}
+.outcome--peach h3{color:#3d2d27!important}
+.outcome ul{
+  list-style:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+.outcome li{
+  position:relative!important;
+  min-height:51px!important;
+  display:flex!important;
+  align-items:center!important;
+  padding:13px 0 13px 17px!important;
+  font-size:0!important;
+  line-height:1!important;
+  border-bottom:1px solid rgba(255,255,255,.22)!important;
+}
+.outcome--peach li{border-bottom-color:rgba(74,56,48,.18)!important}
+.outcome li::before{
+  content:""!important;
+  position:absolute!important;
+  left:0!important;
+  top:50%!important;
+  width:5px!important;
+  height:5px!important;
+  margin-top:-2.5px!important;
+  border-radius:50%!important;
+  background:#f3bba8!important;
+}
+.outcome--peach li::before{background:#80965a!important}
+.outcome li::after{
+  display:block!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:14.5px!important;
+  line-height:1.35!important;
+  font-weight:500!important;
+  letter-spacing:-.02em!important;
+}
+.outcome--green li:nth-child(1)::after{content:"Лучшее самочувствие"}
+.outcome--green li:nth-child(2)::after{content:"Больше энергии"}
+.outcome--green li:nth-child(3)::after{content:"Комфортный вес"}
+.outcome--green li:nth-child(4)::after{content:"Понимание своего питания"}
+.outcome--green li:nth-child(5)::after{content:"Улучшение показателей здоровья"}
+.outcome--peach li:nth-child(1)::after{content:"Спокойствие вместо тревоги"}
+.outcome--peach li:nth-child(2)::after{content:"Уверенность в своём теле"}
+.outcome--peach li:nth-child(3)::after{content:"Понимание, что делать дальше"}
+.outcome--peach li:nth-child(4)::after{content:"Свобода от постоянных диет"}
+.outcome--peach li:nth-child(5)::after{content:"Ощущение контроля над своим здоровьем"}
+.outcome ul::after{
+  min-height:51px!important;
+  display:flex!important;
+  align-items:center!important;
+  box-sizing:border-box!important;
+  padding:13px 0 13px 17px!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:14.5px!important;
+  line-height:1.35!important;
+  font-weight:500!important;
+  letter-spacing:-.02em!important;
+  background-repeat:no-repeat!important;
+  background-position:left center!important;
+  background-size:5px 5px!important;
+}
+.outcome--green ul::after{
+  content:"Привычки, которые легко соблюдать";
+  color:#fffdf7!important;
+  background-image:radial-gradient(circle,#f3bba8 0 2.4px,transparent 2.6px)!important;
+}
+.outcome--peach ul::after{
+  content:"Любовь и уважение к своему телу";
+  color:#2c231f!important;
+  background-image:radial-gradient(circle,#80965a 0 2.4px,transparent 2.6px)!important;
+}
+
 @media(max-width:900px){
   .symptoms{padding-top:56px!important;padding-bottom:56px!important}
   .symptoms .shell{width:min(100% - 30px,760px)!important}
@@ -110,6 +237,15 @@ body .symptoms__box h2{
   .symptom:last-child{grid-column:1/-1!important}
   .symptom p::before{font-size:14.5px!important;font-weight:500!important}
   .symptom span{width:35px!important;height:35px!important;flex-basis:35px!important;background-size:33px 33px!important}
+
+  .outcomes{padding-top:46px!important;padding-bottom:54px!important}
+  .outcomes .shell{width:min(100% - 30px,760px)!important}
+  .outcomes .section-title{margin-bottom:27px!important}
+  .outcomes .section-title::before{font-size:38px!important}
+  .outcomes__grid{grid-template-columns:1fr!important;gap:14px!important}
+  .outcome{min-height:0!important;padding:31px 28px 25px!important;border-radius:23px!important}
+  .outcome li,.outcome ul::after{min-height:48px!important}
+  .outcome li::after,.outcome ul::after{font-size:14px!important}
 }
 
 @media(max-width:560px){
@@ -122,4 +258,13 @@ body .symptoms__box h2{
   .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:92px!important;padding:0 16px!important}
   .symptom p::before{font-size:14px!important;font-weight:500!important}
   .symptom span{width:32px!important;height:32px!important;flex-basis:32px!important;background-size:30px 30px!important}
+
+  .outcomes{padding-top:40px!important;padding-bottom:48px!important}
+  .outcomes .shell{width:calc(100% - 24px)!important}
+  .outcomes .section-title{margin-bottom:22px!important}
+  .outcomes .section-title::before{font-size:32px!important;line-height:1.12!important}
+  .outcome{padding:27px 21px 22px!important;border-radius:20px!important}
+  .outcome h3{font-size:11px!important;margin-bottom:15px!important}
+  .outcome li,.outcome ul::after{min-height:45px!important;padding-top:11px!important;padding-bottom:11px!important}
+  .outcome li::after,.outcome ul::after{font-size:13.5px!important}
 }
