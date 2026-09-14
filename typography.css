@@ -1,28 +1,28 @@
 @import url('typography-base.css');
 
-/* Блок «Если Вам знакомо...» — точная подгонка под референс */
+/* Блок «Если Вам знакомо...» — компактнее, ближе к оригинальному масштабу */
 .symptoms{
-  padding-top:76px!important;
-  padding-bottom:74px!important;
+  padding-top:68px!important;
+  padding-bottom:68px!important;
 }
 .symptoms .shell{
-  width:min(1180px,calc(100% - 80px))!important;
+  width:min(960px,calc(100% - 64px))!important;
   max-width:none!important;
 }
 .symptoms__box{
   background:#f8bea9!important;
-  border-radius:31px!important;
-  padding:48px 43px 46px!important;
+  border-radius:28px!important;
+  padding:39px 34px 34px!important;
   box-sizing:border-box!important;
 }
 body .symptoms__box h2{
-  max-width:790px!important;
-  margin:0 0 16px!important;
+  max-width:720px!important;
+  margin:0 0 12px!important;
   font-family:"Manrope",sans-serif!important;
-  font-size:40px!important;
+  font-size:34px!important;
   line-height:1.16!important;
   font-weight:400!important;
-  letter-spacing:-.035em!important;
+  letter-spacing:-.032em!important;
   color:#30241f!important;
   -webkit-text-stroke:0!important;
 }
@@ -35,27 +35,27 @@ body .symptoms__box h2{
   content:"Не спешите винить себя. Во многих случаях за ними могут стоять особенности питания и образа жизни.";
   display:block!important;
   font-family:"Manrope",sans-serif!important;
-  font-size:14px!important;
+  font-size:12px!important;
   line-height:1.5!important;
   font-weight:400!important;
-  letter-spacing:-.018em!important;
+  letter-spacing:-.015em!important;
   color:#4d352b!important;
 }
 .symptoms__grid{
   display:grid!important;
   grid-template-columns:repeat(6,minmax(0,1fr))!important;
-  gap:14px!important;
-  margin-top:34px!important;
+  gap:11px!important;
+  margin-top:26px!important;
 }
 .symptom{
-  min-height:132px!important;
+  min-height:104px!important;
   display:flex!important;
   align-items:center!important;
   justify-content:space-between!important;
-  gap:24px!important;
-  padding:0 26px!important;
+  gap:18px!important;
+  padding:0 21px!important;
   box-sizing:border-box!important;
-  border-radius:20px!important;
+  border-radius:17px!important;
   background:#f9e8df!important;
 }
 .symptom--wide{grid-column:span 3!important}
@@ -70,10 +70,10 @@ body .symptoms__box h2{
   display:block!important;
   white-space:pre-line!important;
   font-family:"Manrope",sans-serif!important;
-  font-size:16.5px!important;
+  font-size:14.5px!important;
   line-height:1.4!important;
   font-weight:500!important;
-  letter-spacing:-.02em!important;
+  letter-spacing:-.018em!important;
   color:#172414!important;
 }
 .symptom:nth-child(1) p::before{content:"Постоянная усталость,\Aдаже после отдыха"}
@@ -83,14 +83,14 @@ body .symptoms__box h2{
 .symptom:nth-child(5) p::before{content:"Пытаетесь начать «новую\Aжизнь» каждый\Aпонедельник"}
 .symptom span{
   display:block!important;
-  width:44px!important;
-  height:44px!important;
-  flex:0 0 44px!important;
+  width:38px!important;
+  height:38px!important;
+  flex:0 0 38px!important;
   font-size:0!important;
   color:transparent!important;
   background-repeat:no-repeat!important;
   background-position:center!important;
-  background-size:42px 42px!important;
+  background-size:36px 36px!important;
   opacity:.88!important;
 }
 .symptom:nth-child(1) span{background-image:url('assets/icon-fatigue.svg')!important}
@@ -100,26 +100,26 @@ body .symptoms__box h2{
 .symptom:nth-child(5) span{background-image:url('assets/icon-monday.svg')!important}
 
 @media(max-width:900px){
-  .symptoms{padding-top:62px!important;padding-bottom:62px!important}
+  .symptoms{padding-top:56px!important;padding-bottom:56px!important}
   .symptoms .shell{width:min(100% - 30px,760px)!important}
-  .symptoms__box{padding:36px 28px 31px!important;border-radius:26px!important}
-  body .symptoms__box h2{font-size:34px!important;line-height:1.17!important;font-weight:400!important}
-  .symptoms__box .intro::before{font-size:13px!important}
-  .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;margin-top:27px!important}
-  .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:112px!important;padding:0 21px!important}
+  .symptoms__box{padding:32px 25px 27px!important;border-radius:24px!important}
+  body .symptoms__box h2{font-size:31px!important;line-height:1.17!important;font-weight:400!important}
+  .symptoms__box .intro::before{font-size:12px!important}
+  .symptoms__grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important;margin-top:24px!important}
+  .symptom,.symptom--wide,.symptom:not(.symptom--wide){grid-column:span 1!important;min-height:100px!important;padding:0 19px!important}
   .symptom:last-child{grid-column:1/-1!important}
-  .symptom p::before{font-size:15.5px!important;font-weight:500!important}
-  .symptom span{width:39px!important;height:39px!important;flex-basis:39px!important;background-size:37px 37px!important}
+  .symptom p::before{font-size:14.5px!important;font-weight:500!important}
+  .symptom span{width:35px!important;height:35px!important;flex-basis:35px!important;background-size:33px 33px!important}
 }
 
 @media(max-width:560px){
-  .symptoms{padding-top:50px!important;padding-bottom:54px!important}
+  .symptoms{padding-top:46px!important;padding-bottom:50px!important}
   .symptoms .shell{width:calc(100% - 24px)!important}
-  .symptoms__box{padding:28px 20px 22px!important;border-radius:22px!important}
-  body .symptoms__box h2{font-size:29px!important;line-height:1.18!important;letter-spacing:-.03em!important;font-weight:400!important}
-  .symptoms__box .intro::before{font-size:12px!important}
-  .symptoms__grid{grid-template-columns:1fr!important;gap:10px!important;margin-top:24px!important}
-  .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:102px!important;padding:0 18px!important}
-  .symptom p::before{font-size:14.5px!important;font-weight:500!important}
-  .symptom span{width:34px!important;height:34px!important;flex-basis:34px!important;background-size:32px 32px!important}
+  .symptoms__box{padding:25px 18px 20px!important;border-radius:20px!important}
+  body .symptoms__box h2{font-size:27px!important;line-height:1.18!important;letter-spacing:-.028em!important;font-weight:400!important}
+  .symptoms__box .intro::before{font-size:11.5px!important}
+  .symptoms__grid{grid-template-columns:1fr!important;gap:9px!important;margin-top:21px!important}
+  .symptom,.symptom--wide,.symptom:not(.symptom--wide),.symptom:last-child{grid-column:1!important;min-height:92px!important;padding:0 16px!important}
+  .symptom p::before{font-size:14px!important;font-weight:500!important}
+  .symptom span{width:32px!important;height:32px!important;flex-basis:32px!important;background-size:30px 30px!important}
 }
