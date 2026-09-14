@@ -14,17 +14,21 @@
   color:#4f352b!important;
 }
 
-/* Заголовок блока состояний — тот же характер шрифта, но заметно плотнее */
+/* Заголовок блока состояний — делаем реально заметно жирнее */
 .symptoms__box h2{
+  font-family:"Manrope",sans-serif!important;
   font-weight:600!important;
-  -webkit-text-stroke:.28px currentColor;
-  text-rendering:geometricPrecision;
+  letter-spacing:-.04em!important;
+  line-height:1.16!important;
+  color:#30241f!important;
+  -webkit-text-stroke:0!important;
 }
 
 @media(max-width:900px){
   .symptom p::before{font-size:15.5px!important;font-weight:600!important}
+  .symptoms__box h2{font-weight:600!important}
 }
 @media(max-width:560px){
   .symptom p::before{font-size:14.5px!important;font-weight:600!important}
-  .symptoms__box h2{-webkit-text-stroke:.22px currentColor}
+  .symptoms__box h2{font-weight:600!important}
 }
