@@ -1,8 +1,20 @@
 (()=>{
   const visual=document.createElement('link');visual.rel='stylesheet';visual.href='visual.css?v=4';document.head.appendChild(visual);
-  const preciseType=document.createElement('link');preciseType.rel='stylesheet';preciseType.href='typography.css?v=2';document.head.appendChild(preciseType);
+  const preciseType=document.createElement('link');preciseType.rel='stylesheet';preciseType.href='typography.css?v=3';document.head.appendChild(preciseType);
 
   const font=document.createElement('link');font.rel='stylesheet';font.href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Poiret+One&display=swap';document.head.appendChild(font);
+
+  const marqueeStyle=document.createElement('style');
+  marqueeStyle.textContent=`
+    .marquee{height:66px!important;min-height:66px!important;display:flex!important;align-items:center!important;overflow:hidden!important;background:#7d8e58!important}
+    .marquee__track{height:100%!important;display:flex!important;align-items:center!important;animation-duration:31s!important}
+    .marquee__set{height:100%!important;display:flex!important;align-items:center!important;gap:46px!important;padding:0 18px!important;white-space:nowrap!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:600!important;letter-spacing:.045em!important;color:#fcfcfc!important}
+    .marquee__set span{font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:600!important;letter-spacing:.045em!important;color:#fcfcfc!important}
+    .marquee__set i{font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1!important;font-style:normal!important;font-weight:400!important;letter-spacing:0!important;color:#b7c2a1!important;opacity:1!important}
+    @media(max-width:900px){.marquee{height:60px!important;min-height:60px!important}.marquee__set{gap:38px!important;padding:0 16px!important;font-size:13px!important}.marquee__set span{font-size:13px!important}}
+    @media(max-width:560px){.marquee{height:56px!important;min-height:56px!important}.marquee__set{gap:32px!important;padding:0 14px!important;font-size:12px!important}.marquee__set span{font-size:12px!important}.marquee__set i{font-size:12px!important}}
+  `;
+  document.head.appendChild(marqueeStyle);
 
   const contactStyle=document.createElement('style');
   contactStyle.textContent=`
