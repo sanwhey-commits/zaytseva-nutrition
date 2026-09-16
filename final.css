@@ -1,0 +1,84 @@
+/* Final content/layout overrides */
+
+/* Header: keep navigation visible on mobile */
+@media(max-width:900px){
+  .header{position:sticky!important;top:0!important;z-index:1000!important;background:rgba(245,241,232,.98)!important;backdrop-filter:blur(14px)!important}
+  .header__inner{display:flex!important;flex-wrap:wrap!important;min-height:86px!important;height:auto!important;padding:8px 0 7px!important;gap:7px 10px!important}
+  .brand{order:1!important;flex:1 1 auto!important;min-width:0!important;margin-right:0!important}
+  .brand strong{font-size:13px!important;white-space:nowrap!important}
+  .brand small{display:none!important}
+  .btn--header{order:2!important;min-height:38px!important;padding:8px 14px!important;font-size:10px!important;flex:0 0 auto!important}
+  .nav{order:3!important;width:100%!important;display:flex!important;justify-content:space-between!important;align-items:center!important;gap:8px!important;padding-top:5px!important;border-top:1px solid rgba(82,97,60,.12)!important;font-size:11px!important;line-height:1!important;white-space:nowrap!important}
+  .nav a{display:block!important;padding:5px 0!important}
+}
+@media(max-width:390px){
+  .brand strong{font-size:12px!important}.btn--header{padding:8px 11px!important}.nav{font-size:10px!important;gap:5px!important}
+}
+
+/* Hero copy */
+.hero__lead{font-family:"Manrope",sans-serif!important;font-weight:400!important}
+@media(max-width:560px){.hero__lead{font-size:14px!important;line-height:1.62!important}}
+
+/* Symptoms: show real HTML copy and larger icons */
+.symptoms__box .intro{font-size:13px!important;line-height:1.55!important;color:#4d352b!important}
+.symptoms__box .intro::before{content:none!important;display:none!important}
+.symptom p{font-size:14.5px!important;line-height:1.4!important;font-weight:500!important;color:#172414!important}
+.symptom p::before{content:none!important;display:none!important}
+.symptom span{width:76px!important;height:76px!important;flex:0 0 76px!important;background-size:70px 70px!important}
+@media(max-width:900px){.symptom span{width:68px!important;height:68px!important;flex-basis:68px!important;background-size:62px 62px!important}}
+@media(max-width:560px){.symptom{min-height:112px!important}.symptom span{width:64px!important;height:64px!important;flex-basis:64px!important;background-size:58px 58px!important}.symptom p{font-size:14px!important}}
+
+/* Philosophy: use the supplied copy, not pseudo-content */
+.philosophy__lead{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)!important;gap:54px!important;align-items:start!important}
+body .philosophy__lead h2{font-size:54px!important;line-height:1.05!important;color:#566640!important;max-width:330px!important;font-family:"Poiret One",sans-serif!important;letter-spacing:0!important}
+body .philosophy__lead h2::before{content:none!important;display:none!important}
+body .philosophy__lead p{font-size:15px!important;line-height:1.72!important;color:#53604b!important;max-width:650px!important;margin:5px 0 0!important;font-family:"Manrope",sans-serif!important}
+body .philosophy__lead p::before{content:none!important;display:none!important}
+.philosophy .principles{margin-top:42px!important}
+.philosophy .principles h3{font-size:17px!important;line-height:1.35!important;color:#26331f!important;margin:0 0 12px!important}
+.philosophy .principles h3::before{content:none!important;display:none!important}
+.philosophy .principles p{font-size:13px!important;line-height:1.62!important;color:#6b7865!important}
+.philosophy .principles p::before{content:none!important;display:none!important}
+@media(max-width:900px){
+  .philosophy__lead{grid-template-columns:1fr!important;gap:14px!important}.philosophy__lead h2{max-width:none!important;font-size:44px!important}.philosophy__lead p{max-width:none!important;font-size:14px!important}.philosophy .principles{grid-template-columns:1fr 1fr!important;gap:0!important}
+}
+@media(max-width:560px){
+  .philosophy__lead h2{font-size:39px!important}.philosophy__lead p{font-size:14px!important;line-height:1.65!important}.philosophy .principles{grid-template-columns:1fr!important}.philosophy .principles article{min-height:0!important;padding:0 0 22px 17px!important}.philosophy .principles h3{font-size:17px!important}.philosophy .principles p{font-size:14px!important}
+}
+
+/* Outcomes title: use the actual heading */
+.outcomes .section-title{font-size:44px!important;line-height:1.1!important;color:#596a40!important;font-family:"Poiret One",sans-serif!important}
+.outcomes .section-title::before{content:none!important;display:none!important}
+@media(max-width:900px){.outcomes .section-title{font-size:38px!important}}
+@media(max-width:560px){.outcomes .section-title{font-size:35px!important}}
+
+/* About: remove generated value strip and keep clean photo copy */
+.about .diplomas{padding-top:0!important}
+.about .diplomas::before,.about .diplomas__copy::before,.about .diploma-card:nth-child(2)::before,.about .diploma-card:nth-child(3)::before{content:none!important;display:none!important}
+.about-card__copy{padding-top:16px!important}.about-card__copy p{margin:0!important;font-size:15px!important;line-height:1.62!important;color:#53604b!important}
+@media(max-width:900px){.about .diplomas{padding-top:0!important}.about-card__copy p{font-size:14px!important}}
+
+/* Services: remove intro/badge and format promo price */
+.services__head{grid-template-columns:1fr!important;gap:0!important;margin-bottom:30px!important}.services__head p{display:none!important}.services__head h2{max-width:760px!important}
+.badge{display:none!important}
+.price-card:not(.price-card--featured) .price-card__head{margin-top:0!important}
+.price-card--featured .price-card__head strong::before{content:none!important;display:none!important}
+.price-promo{display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:8px 10px!important;margin:0 0 9px!important}
+.price-old{display:inline-flex!important;align-items:center!important;padding:6px 11px!important;border:1px solid rgba(177,81,60,.35)!important;border-radius:999px!important;background:rgba(255,250,245,.46)!important;font-family:"Manrope",sans-serif!important;font-size:14px!important;line-height:1!important;font-weight:600!important;color:#9b5141!important;text-decoration:line-through!important;text-decoration-thickness:2px!important;text-decoration-color:#c85e46!important}
+.price-note{font-family:"Manrope",sans-serif!important;font-size:10px!important;line-height:1!important;font-weight:700!important;letter-spacing:.12em!important;color:#8a5144!important;text-transform:uppercase!important}
+.price-card__head strong{font-family:"Manrope",sans-serif!important;font-size:35px!important;line-height:1!important;font-weight:500!important;letter-spacing:-.05em!important}
+.price-card--featured .price-card__head strong{display:block!important;color:#cf5f43!important}
+.price-card li{padding-left:0!important;margin:0 0 15px!important;list-style:none!important}.price-card li::before{display:none!important}
+.price-card li strong{font-weight:600!important;color:#334129!important}
+@media(max-width:560px){.services__head h2{font-size:38px!important}.price-card__head strong{font-size:31px!important}.price-old{font-size:13px!important}.price-note{font-size:9px!important}.price-card li{font-size:14px!important;line-height:1.5!important}}
+
+/* Process removed in HTML; safety fallback */
+.process{display:none!important}
+
+/* FAQ clean-up */
+.faq-intro{display:none!important}.faq .faq__list::before{content:none!important;display:none!important}
+
+/* Mobile spacing after re-ordering */
+@media(max-width:560px){
+  .philosophy{padding-top:44px!important;padding-bottom:42px!important}.outcomes{padding-top:40px!important}.about{padding-top:44px!important}.services{padding-top:44px!important}.reviews{padding-top:44px!important}.faq{padding-top:44px!important}
+}
