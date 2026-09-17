@@ -94,7 +94,7 @@ html body .services .pricing .price-card.price-card--featured .price-card__head 
   padding:0!important;
 }
 
-/* Tariff list bullets — one visible dot before every item */
+/* Tariff list bullets — guaranteed visible */
 .price-card ul{
   list-style:none!important;
   padding-left:0!important;
@@ -102,28 +102,25 @@ html body .services .pricing .price-card.price-card--featured .price-card__head 
 }
 .price-card li{
   position:relative!important;
-  padding-left:20px!important;
+  padding-left:22px!important;
   margin:0 0 15px!important;
   list-style:none!important;
+  background-image:radial-gradient(circle,#83985f 0 3px,transparent 3.4px)!important;
+  background-repeat:no-repeat!important;
+  background-size:7px 7px!important;
+  background-position:1px .62em!important;
+}
+.price-card--featured li{
+  background-image:radial-gradient(circle,#ef7756 0 3px,transparent 3.4px)!important;
 }
 .price-card li::before{
-  content:""!important;
-  display:block!important;
-  position:absolute!important;
-  left:1px!important;
-  top:.62em!important;
-  width:6px!important;
-  height:6px!important;
-  border-radius:50%!important;
-  background:#83985f!important;
-  opacity:1!important;
+  content:none!important;
+  display:none!important;
 }
-.price-card--featured li::before{background:#ef7756!important}
 .price-card li strong{font-weight:600!important;color:#334129!important}
 @media(max-width:560px){
   .services__head h2{font-size:38px!important}.price-card__head strong{font-size:31px!important}.price-old{font-size:13px!important}.price-note{font-size:9px!important}
-  .price-card li{font-size:14px!important;line-height:1.5!important;padding-left:19px!important;margin-bottom:14px!important}
-  .price-card li::before{width:6px!important;height:6px!important;top:.58em!important}
+  .price-card li{font-size:14px!important;line-height:1.5!important;padding-left:21px!important;margin-bottom:14px!important;background-position:1px .58em!important}
 }
 
 /* Process removed in HTML; safety fallback */
