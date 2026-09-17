@@ -82,3 +82,6 @@ body .philosophy__lead p::before{content:none!important;display:none!important}
 @media(max-width:560px){
   .philosophy{padding-top:44px!important;padding-bottom:42px!important}.outcomes{padding-top:40px!important}.about{padding-top:44px!important}.services{padding-top:44px!important}.reviews{padding-top:44px!important}.faq{padding-top:44px!important}
 }
+
+/* Force-hide legacy generated old price so 15 000 ₽ appears only once */
+html body .services .pricing .price-card.price-card--featured .price-card__head strong::before{content:none!important;display:none!important}
