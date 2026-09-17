@@ -255,3 +255,101 @@ html body .services .price-card ul > li strong{
   .header .nav{gap:20px!important;font-size:12.5px!important;margin-bottom:17px!important}
   .header .btn--header{min-height:41px!important;height:41px!important;padding:0 22px!important;font-size:12.5px!important}
 }
+
+/* Exact phone header geometry from the reference screenshot (368 × 183) */
+@media(max-width:560px){
+  body{padding-top:183px!important}
+  .header{
+    height:183px!important;
+    min-height:183px!important;
+    background:#efebe0!important;
+    box-shadow:none!important;
+    border-bottom:0!important;
+  }
+  .header .header__inner{
+    position:relative!important;
+    display:block!important;
+    width:100%!important;
+    height:183px!important;
+    min-height:183px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .header .brand{
+    position:absolute!important;
+    top:17px!important;
+    left:14px!important;
+    right:14px!important;
+    width:auto!important;
+    height:auto!important;
+    margin:0!important;
+    display:flex!important;
+    align-items:flex-start!important;
+    gap:13px!important;
+  }
+  .header .brand__dot{
+    width:8px!important;
+    height:8px!important;
+    flex:0 0 8px!important;
+    margin:20px 0 0!important;
+    background:#7f925b!important;
+  }
+  .header .brand strong{
+    font-size:17px!important;
+    line-height:1.2!important;
+    font-weight:400!important;
+    letter-spacing:.02em!important;
+    color:#5d6c43!important;
+  }
+  .header .brand small{
+    display:block!important;
+    margin-top:3px!important;
+    max-width:280px!important;
+    font-size:9px!important;
+    line-height:1.35!important;
+    font-weight:500!important;
+    letter-spacing:.145em!important;
+    color:#738061!important;
+  }
+  .header .nav{
+    position:absolute!important;
+    top:93px!important;
+    left:14px!important;
+    width:min(297px,calc(100% - 28px))!important;
+    height:auto!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    justify-content:space-between!important;
+    align-items:center!important;
+    gap:0!important;
+    border:0!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:400!important;
+    color:#65724f!important;
+  }
+  .header .nav a{
+    padding:0!important;
+    margin:0!important;
+  }
+  .header .btn--header{
+    position:absolute!important;
+    top:129px!important;
+    left:14px!important;
+    width:136px!important;
+    height:42px!important;
+    min-height:42px!important;
+    padding:0!important;
+    margin:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:9px!important;
+    border-radius:999px!important;
+    background:#ea795b!important;
+    font-size:13px!important;
+    line-height:1!important;
+    font-weight:500!important;
+  }
+}
