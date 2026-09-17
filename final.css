@@ -94,33 +94,49 @@ html body .services .pricing .price-card.price-card--featured .price-card__head 
   padding:0!important;
 }
 
-/* Tariff list bullets — guaranteed visible */
-.price-card ul{
-  list-style:none!important;
-  padding-left:0!important;
-  margin-left:0!important;
+/* Tariff lists — native bullets with clean spacing, matching the reference */
+html body .services .price-card ul{
+  display:block!important;
+  list-style-type:disc!important;
+  list-style-position:outside!important;
+  padding-left:20px!important;
+  margin:20px 0!important;
 }
-.price-card li{
-  position:relative!important;
-  padding-left:22px!important;
-  margin:0 0 15px!important;
-  list-style:none!important;
-  background-image:radial-gradient(circle,#83985f 0 3px,transparent 3.4px)!important;
-  background-repeat:no-repeat!important;
-  background-size:7px 7px!important;
-  background-position:1px .62em!important;
+html body .services .price-card ul > li{
+  display:list-item!important;
+  list-style-type:disc!important;
+  position:static!important;
+  padding-left:4px!important;
+  margin:0 0 14px!important;
+  background:none!important;
+  font-family:"Manrope",sans-serif!important;
+  font-size:14px!important;
+  line-height:1.55!important;
+  font-weight:400!important;
+  color:#5c674f!important;
 }
-.price-card--featured li{
-  background-image:radial-gradient(circle,#ef7756 0 3px,transparent 3.4px)!important;
-}
-.price-card li::before{
+html body .services .price-card ul > li::before{
   content:none!important;
   display:none!important;
 }
-.price-card li strong{font-weight:600!important;color:#334129!important}
+html body .services .price-card ul > li::marker{
+  color:#83985f!important;
+  font-size:.85em!important;
+}
+html body .services .price-card.price-card--featured ul > li{
+  color:#5b4339!important;
+}
+html body .services .price-card.price-card--featured ul > li::marker{
+  color:#ef7756!important;
+}
+html body .services .price-card ul > li strong{
+  font-weight:400!important;
+  color:inherit!important;
+}
 @media(max-width:560px){
   .services__head h2{font-size:38px!important}.price-card__head strong{font-size:31px!important}.price-old{font-size:13px!important}.price-note{font-size:9px!important}
-  .price-card li{font-size:14px!important;line-height:1.5!important;padding-left:21px!important;margin-bottom:14px!important;background-position:1px .58em!important}
+  html body .services .price-card ul{padding-left:19px!important;margin:18px 0!important}
+  html body .services .price-card ul > li{font-size:14px!important;line-height:1.52!important;padding-left:3px!important;margin-bottom:12px!important}
 }
 
 /* Process removed in HTML; safety fallback */
